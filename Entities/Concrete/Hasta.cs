@@ -1,3 +1,5 @@
+using Core.Entity;
+
 namespace Entities.Entity
 {
     using System;
@@ -7,7 +9,7 @@ namespace Entities.Entity
     using System.Data.Entity.Spatial;
 
     [Table("Hasta")]
-    public partial class Hasta
+    public partial class Hasta:IEntity
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Hasta()

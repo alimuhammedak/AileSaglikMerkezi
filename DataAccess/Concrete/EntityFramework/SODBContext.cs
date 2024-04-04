@@ -40,11 +40,9 @@ namespace Entities.Entity
         public virtual DbSet<ReceteTur> ReceteTurs { get; set; }
         public virtual DbSet<Sikayet> Sikayets { get; set; }
         public virtual DbSet<SikayetTur> SikayetTurs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Tahlil> Tahlils { get; set; }
         public virtual DbSet<TahlilBirim> TahlilBirims { get; set; }
         public virtual DbSet<TahlilTur> TahlilTurs { get; set; }
-        public virtual DbSet<Tani> Tanis { get; set; }
         public virtual DbSet<Tedarikci> Tedarikcis { get; set; }
         public virtual DbSet<Tetkik> Tetkiks { get; set; }
 
