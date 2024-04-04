@@ -15,6 +15,8 @@ namespace WinFormUI
         public frmGiris()
         {
             InitializeComponent();
+            //deneme
+
         }
     }
 }
