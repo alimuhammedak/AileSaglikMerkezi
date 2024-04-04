@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +50,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Cinsiyet.cs" />
+    <Compile Include="Entity\Doktor.cs" />
+    <Compile Include="Entity\Hasta.cs" />
+    <Compile Include="Entity\HastaDetay.cs" />
+    <Compile Include="Entity\HastaDoktor.cs" />
+    <Compile Include="Entity\HastaHastalik.cs" />
+    <Compile Include="Entity\HastaIlacRapor.cs" />
+    <Compile Include="Entity\HastaKayit.cs" />
+    <Compile Include="Entity\HastaKayitDetay.cs" />
+    <Compile Include="Entity\Hastalik.cs" />
+    <Compile Include="Entity\HastaYakin.cs" />
+    <Compile Include="Entity\HastaYakinlikDerece.cs" />
+    <Compile Include="Entity\Hemsire.cs" />
+    <Compile Include="Entity\Il.cs" />
+    <Compile Include="Entity\Ilac.cs" />
+    <Compile Include="Entity\IlacOlcek.cs" />
+    <Compile Include="Entity\IlacRapor.cs" />
+    <Compile Include="Entity\Ilce.cs" />
+    <Compile Include="Entity\Mahalle.cs" />
+    <Compile Include="Entity\Oda.cs" />
+    <Compile Include="Entity\Olcek.cs" />
+    <Compile Include="Entity\Personel.cs" />
+    <Compile Include="Entity\Rapor.cs" />
+    <Compile Include="Entity\Recete.cs" />
+    <Compile Include="Entity\ReceteIlac.cs" />
+    <Compile Include="Entity\ReceteTur.cs" />
+    <Compile Include="Entity\Sikayet.cs" />
+    <Compile Include="Entity\SikayetTur.cs" />
+    <Compile Include="Entity\SODBContext.cs" />
+    <Compile Include="Entity\sysdiagram.cs" />
+    <Compile Include="Entity\Tahlil.cs" />
+    <Compile Include="Entity\TahlilBirim.cs" />
+    <Compile Include="Entity\TahlilTur.cs" />
+    <Compile Include="Entity\Tani.cs" />
+    <Compile Include="Entity\Tedarikci.cs" />
+    <Compile Include="Entity\Tetkik.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
