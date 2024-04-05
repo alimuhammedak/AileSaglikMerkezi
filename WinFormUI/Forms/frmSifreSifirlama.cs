@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,5 +23,11 @@ namespace WinFormUI.Forms
         {
 
         }
+
+        private void btnGeriDon_Click(object sender, EventArgs e)
+        {
+           
+        }
+
     }
 }

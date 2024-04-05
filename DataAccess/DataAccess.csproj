@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,10 +55,12 @@
   <ItemGroup>
     <Compile Include="Abstract\IHastaDal.cs" />
     <Compile Include="Abstract\IIlacDal.cs" />
+    <Compile Include="Abstract\IPersonelDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfHastaDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfIlacDal.cs" />
-    <Compile Include="Concrete\EntityFramework\SODBContext.cs" />
+    <Compile Include="Concrete\EntityFramework\EfPersonelDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Concrete\EntityFramework\SODBContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Concrete\InMemory\" />

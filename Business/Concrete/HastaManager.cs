@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using Business.Abstract;
@@ -31,10 +32,10 @@ namespace Business.Concrete
             //Business codes
 
             //hasat kayıt sadece 08-17 saatleri arasında yapılabilir
-            //if (DateTime.Now.Hour < 8 || DateTime.Now.Hour > 17)
-            //{
-            //    return new ErrorResult("Hasta kaydı sadece 08:00-17:00 saatleri arasında yapılabilir");
-            //}
+            if (DateTime.Now.Hour < 8 || DateTime.Now.Hour > 17)
+            {
+                return new ErrorResult(Messages.MaintenanceTime);
+            }
 
             _hastaDal.Add(hasta);
             return new SuccessResult(Messages.HastaAdded);
@@ -42,22 +43,30 @@ namespace Business.Concrete
 
         public IResult Delete(Hasta hasta)
         {
-            throw new NotImplementedException();
+            if (hasta.sosyalGuvenlikNo.EndsWith("3")) //sosyal güvenlik numarası 3 ile biten hastalar silinemez
+            {
+                return new ErrorResult("Sosyal güvenlik numarası 3 ile biten hastalar silinemez");
+            }
+            _hastaDal.Delete(hasta);
+            return new SuccessResult(Messages.HastaAdded);
         }
 
         public IDataResult<List<Hasta>> GetAll()
         {
-            throw new NotImplementedException();
+            
+            return new SuccessDataResult<List<Hasta>>(_hastaDal.GetAll(),Messages.HastaListed);
         }
 
         public IDataResult<Hasta> GetById(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<Hasta>(_hastaDal.Get(h => h.hastaID == id));
+
         }
 
         public IResult Update(Hasta hasta)
         {
-            throw new NotImplementedException();
+            _hastaDal.Update(hasta);
+            return new SuccessResult(Messages.HastaUpdated);
         }
     }
 }
