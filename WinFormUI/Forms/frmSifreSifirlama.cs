@@ -21,5 +21,10 @@ namespace WinFormUI.Forms
         {
 
         }
+
+        private void PctrBxClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

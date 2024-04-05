@@ -217,6 +217,7 @@
             resources.ApplyResources(this.PctrBxClose, "PctrBxClose");
             this.PctrBxClose.Name = "PctrBxClose";
             this.PctrBxClose.TabStop = false;
+            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
             // 
             // PctrBxAciklamaResim
             // 

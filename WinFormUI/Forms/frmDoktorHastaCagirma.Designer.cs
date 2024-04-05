@@ -35,16 +35,16 @@
             this.frmDoktorHastaCagirmaElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.frmDoktorHastaCagirmaDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PnlHastaCagirma = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PnlHastaSiraListesi = new Guna.UI2.WinForms.Guna2Panel();
             this.LblSifreSifirlama = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PnlHastaCagirma.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.PnlHastaSiraListesi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
             this.SuspendLayout();
             // 
             // frmDoktorHastaCagirmaDragControl
@@ -61,6 +61,29 @@
             this.PnlHastaCagirma.Name = "PnlHastaCagirma";
             this.PnlHastaCagirma.Size = new System.Drawing.Size(467, 560);
             this.PnlHastaCagirma.TabIndex = 0;
+            // 
+            // PctrBxClose
+            // 
+            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.Multiply;
+            this.PctrBxClose.ImageRotate = 0F;
+            this.PctrBxClose.Location = new System.Drawing.Point(419, 3);
+            this.PctrBxClose.Name = "PctrBxClose";
+            this.PctrBxClose.Size = new System.Drawing.Size(45, 45);
+            this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctrBxClose.TabIndex = 23;
+            this.PctrBxClose.TabStop = false;
+            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::WinFormUI.Properties.Resources.ORTALI_LOGO_TÜRKÇE;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(467, 560);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // PnlHastaSiraListesi
             // 
@@ -132,28 +155,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::WinFormUI.Properties.Resources.ORTALI_LOGO_TÜRKÇE;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(467, 560);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // PctrBxClose
-            // 
-            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.Multiply;
-            this.PctrBxClose.ImageRotate = 0F;
-            this.PctrBxClose.Location = new System.Drawing.Point(419, 3);
-            this.PctrBxClose.Name = "PctrBxClose";
-            this.PctrBxClose.Size = new System.Drawing.Size(45, 45);
-            this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctrBxClose.TabIndex = 23;
-            this.PctrBxClose.TabStop = false;
-            // 
             // frmDoktorHastaCagirma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,11 +167,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDoktorHastaCagirma";
             this.PnlHastaCagirma.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.PnlHastaSiraListesi.ResumeLayout(false);
             this.PnlHastaSiraListesi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -38,6 +38,7 @@
             this.frmHastaKayitElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.frmHastaKayitDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PnlHastaBilgisi = new Guna.UI2.WinForms.Guna2Panel();
+            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.DataGwHastaKayit = new Guna.UI2.WinForms.Guna2DataGridView();
             this.LblKayitTarihi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblProtokolNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -57,14 +58,13 @@
             this.BtnIptal = new Guna.UI2.WinForms.Guna2TileButton();
             this.DataGwDoktorBilgisi = new Guna.UI2.WinForms.Guna2DataGridView();
             this.BtnHastaKayit = new Guna.UI2.WinForms.Guna2TileButton();
-            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PnlHastaBilgisi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGwHastaKayit)).BeginInit();
             this.PnlHastaDetay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBoxHasta)).BeginInit();
             this.PnlDoktor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGwDoktorBilgisi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
             this.SuspendLayout();
             // 
             // frmHastaKayitDragControl
@@ -87,6 +87,18 @@
             this.PnlHastaBilgisi.Size = new System.Drawing.Size(1182, 278);
             this.PnlHastaBilgisi.TabIndex = 0;
             this.PnlHastaBilgisi.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlHastaKayit_Paint);
+            // 
+            // PctrBxClose
+            // 
+            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.Multiply;
+            this.PctrBxClose.ImageRotate = 0F;
+            this.PctrBxClose.Location = new System.Drawing.Point(1134, 3);
+            this.PctrBxClose.Name = "PctrBxClose";
+            this.PctrBxClose.Size = new System.Drawing.Size(45, 45);
+            this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctrBxClose.TabIndex = 22;
+            this.PctrBxClose.TabStop = false;
+            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
             // 
             // DataGwHastaKayit
             // 
@@ -398,17 +410,6 @@
             this.BtnHastaKayit.TabIndex = 41;
             this.BtnHastaKayit.Text = "Kaydet";
             // 
-            // PctrBxClose
-            // 
-            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.Multiply;
-            this.PctrBxClose.ImageRotate = 0F;
-            this.PctrBxClose.Location = new System.Drawing.Point(1134, 3);
-            this.PctrBxClose.Name = "PctrBxClose";
-            this.PctrBxClose.Size = new System.Drawing.Size(45, 45);
-            this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctrBxClose.TabIndex = 22;
-            this.PctrBxClose.TabStop = false;
-            // 
             // frmHastaKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -424,13 +425,13 @@
             this.Load += new System.EventHandler(this.frmHastaKayit_Load);
             this.PnlHastaBilgisi.ResumeLayout(false);
             this.PnlHastaBilgisi.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGwHastaKayit)).EndInit();
             this.PnlHastaDetay.ResumeLayout(false);
             this.PnlHastaDetay.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBoxHasta)).EndInit();
             this.PnlDoktor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGwDoktorBilgisi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
             this.ResumeLayout(false);
 
         }
