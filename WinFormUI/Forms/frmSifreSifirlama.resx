@@ -131,7 +131,7 @@
     <value>269, 99</value>
   </data>
   <data name="LblSifreSifirlama.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 23</value>
+    <value>155, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="LblSifreSifirlama.TabIndex" type="System.Int32, mscorlib">
@@ -210,7 +210,7 @@
     <value>132, 153</value>
   </data>
   <data name="LblTcNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 17</value>
+    <value>107, 17</value>
   </data>
   <data name="LblTcNo.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -254,58 +254,58 @@
   <data name="&gt;&gt;TxtBxTcNo.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="btnHatirladim.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnGeriDon.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 9pt, style=Bold</value>
   </data>
-  <data name="btnHatirladim.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnGeriDon.Location" type="System.Drawing.Point, System.Drawing">
     <value>132, 440</value>
   </data>
-  <data name="btnHatirladim.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnGeriDon.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 33</value>
   </data>
-  <data name="btnHatirladim.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnGeriDon.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="btnHatirladim.Text" xml:space="preserve">
+  <data name="btnGeriDon.Text" xml:space="preserve">
     <value>&lt;- Hatırladım</value>
   </data>
-  <data name="&gt;&gt;btnHatirladim.Name" xml:space="preserve">
-    <value>btnHatirladim</value>
+  <data name="&gt;&gt;btnGeriDon.Name" xml:space="preserve">
+    <value>btnGeriDon</value>
   </data>
-  <data name="&gt;&gt;btnHatirladim.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnGeriDon.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2TileButton, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;btnHatirladim.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnGeriDon.Parent" xml:space="preserve">
     <value>PnlSifreSifirlama</value>
   </data>
-  <data name="&gt;&gt;btnHatirladim.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnGeriDon.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="BtnSifreSifirlama.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnSifreSifirlama.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 9pt, style=Bold</value>
   </data>
-  <data name="BtnSifreSifirlama.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnSifreSifirlama.Location" type="System.Drawing.Point, System.Drawing">
     <value>375, 440</value>
   </data>
-  <data name="BtnSifreSifirlama.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnSifreSifirlama.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 33</value>
   </data>
-  <data name="BtnSifreSifirlama.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnSifreSifirlama.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="BtnSifreSifirlama.Text" xml:space="preserve">
+  <data name="btnSifreSifirlama.Text" xml:space="preserve">
     <value>Şifre Sıfırla</value>
   </data>
-  <data name="&gt;&gt;BtnSifreSifirlama.Name" xml:space="preserve">
-    <value>BtnSifreSifirlama</value>
+  <data name="&gt;&gt;btnSifreSifirlama.Name" xml:space="preserve">
+    <value>btnSifreSifirlama</value>
   </data>
-  <data name="&gt;&gt;BtnSifreSifirlama.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnSifreSifirlama.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2TileButton, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;BtnSifreSifirlama.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnSifreSifirlama.Parent" xml:space="preserve">
     <value>PnlSifreSifirlama</value>
   </data>
-  <data name="&gt;&gt;BtnSifreSifirlama.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnSifreSifirlama.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="TxtBxDogumTarihi.Font" type="System.Drawing.Font, System.Drawing">
@@ -363,7 +363,7 @@
     <value>132, 359</value>
   </data>
   <data name="LblDogumTarihi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 17</value>
+    <value>77, 17</value>
   </data>
   <data name="LblDogumTarihi.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>

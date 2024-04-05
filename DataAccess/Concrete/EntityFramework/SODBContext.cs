@@ -1,14 +1,11 @@
-using System;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
-using System.Linq;
+using Entities.Entity;
 
-namespace Entities.Entity
+namespace DataAccess.Concrete.EntityFramework
 {
     public partial class SODBContext : DbContext
     {
-        public SODBContext()
-            : base("name=SODBContext")
+        public SODBContext() : base(@"data source=.;initial catalog=SODB;integrated security=True;encrypt=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework")
         {
         }
 

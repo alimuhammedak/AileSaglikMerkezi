@@ -1,3 +1,5 @@
+using Core.Entity;
+
 namespace Entities.Entity
 {
     using System;
@@ -7,7 +9,7 @@ namespace Entities.Entity
     using System.Data.Entity.Spatial;
 
     [Table("Personel")]
-    public partial class Personel
+    public partial class Personel:IEntity
     {
         public int personelID { get; set; }
 

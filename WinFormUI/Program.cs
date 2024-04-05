@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Entity;
 
 namespace WinFormUI
 {
     internal static class Program
     {
+        internal static Personel personel { get; set; }
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +20,7 @@ namespace WinFormUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGiris());
+            Application.Run(new frmGiris(new PersonelManager(new EfPersonelDal())));
         }
     }
 }
