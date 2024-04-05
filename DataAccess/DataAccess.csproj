@@ -41,6 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Abstract\IHastaDal.cs" />
+    <Compile Include="Abstract\IIlacDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfHastaDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfIlacDal.cs" />
+    <Compile Include="Concrete\EntityFramework\SODBContext.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
