@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IHastaDal.cs" />
+    <Compile Include="Abstract\IIlacDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfHastaDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfIlacDal.cs" />
     <Compile Include="Concrete\EntityFramework\SODBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

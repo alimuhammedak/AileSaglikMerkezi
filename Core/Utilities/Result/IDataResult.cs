@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL
+namespace Core.Utilities.Result
 {
-    public class Class1
+    public interface IDataResult<T>: IResult
     {
+        T Data { get; }
     }
 }

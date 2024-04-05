@@ -56,11 +56,20 @@
     <Compile Include="Entity\IDto.cs" />
     <Compile Include="Entity\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Result\DataResult.cs" />
+    <Compile Include="Utilities\Result\ErrorDataResult.cs" />
+    <Compile Include="Utilities\Result\ErrorResult.cs" />
+    <Compile Include="Utilities\Result\IDataResult.cs" />
+    <Compile Include="Utilities\Result\IResult.cs" />
+    <Compile Include="Utilities\Result\Result.cs" />
+    <Compile Include="Utilities\Result\SuccessDataResult.cs" />
+    <Compile Include="Utilities\Result\SuccessResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
