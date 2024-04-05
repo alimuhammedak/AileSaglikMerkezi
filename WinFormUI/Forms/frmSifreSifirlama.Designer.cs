@@ -38,8 +38,8 @@
             this.LbSoyadi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblTcNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.TxtBxTcNo = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnHatirladim = new Guna.UI2.WinForms.Guna2TileButton();
-            this.BtnSifreSifirlama = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btnGeriDon = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btnSifreSifirlama = new Guna.UI2.WinForms.Guna2TileButton();
             this.TxtBxDogumTarihi = new Guna.UI2.WinForms.Guna2TextBox();
             this.TxtBxAdi = new Guna.UI2.WinForms.Guna2TextBox();
             this.LblDogumTarihi = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -65,8 +65,8 @@
             this.PnlSifreSifirlama.Controls.Add(this.LbSoyadi);
             this.PnlSifreSifirlama.Controls.Add(this.LblTcNo);
             this.PnlSifreSifirlama.Controls.Add(this.TxtBxTcNo);
-            this.PnlSifreSifirlama.Controls.Add(this.btnHatirladim);
-            this.PnlSifreSifirlama.Controls.Add(this.BtnSifreSifirlama);
+            this.PnlSifreSifirlama.Controls.Add(this.btnGeriDon);
+            this.PnlSifreSifirlama.Controls.Add(this.btnSifreSifirlama);
             this.PnlSifreSifirlama.Controls.Add(this.TxtBxDogumTarihi);
             this.PnlSifreSifirlama.Controls.Add(this.TxtBxAdi);
             this.PnlSifreSifirlama.Controls.Add(this.LblDogumTarihi);
@@ -126,35 +126,36 @@
             this.TxtBxTcNo.PlaceholderText = "";
             this.TxtBxTcNo.SelectedText = "";
             // 
-            // btnHatirladim
+            // btnGeriDon
             // 
-            this.btnHatirladim.Animated = true;
-            this.btnHatirladim.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnHatirladim.BorderRadius = 5;
-            this.btnHatirladim.BorderThickness = 1;
-            this.btnHatirladim.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHatirladim.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHatirladim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHatirladim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHatirladim.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.btnHatirladim, "btnHatirladim");
-            this.btnHatirladim.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnHatirladim.Name = "btnHatirladim";
+            this.btnGeriDon.Animated = true;
+            this.btnGeriDon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnGeriDon.BorderRadius = 5;
+            this.btnGeriDon.BorderThickness = 1;
+            this.btnGeriDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGeriDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGeriDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGeriDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGeriDon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.btnGeriDon, "btnGeriDon");
+            this.btnGeriDon.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnGeriDon.Name = "btnGeriDon";
+            this.btnGeriDon.Click += new System.EventHandler(this.btnGeriDon_Click);
             // 
-            // BtnSifreSifirlama
+            // btnSifreSifirlama
             // 
-            this.BtnSifreSifirlama.Animated = true;
-            this.BtnSifreSifirlama.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BtnSifreSifirlama.BorderRadius = 5;
-            this.BtnSifreSifirlama.BorderThickness = 1;
-            this.BtnSifreSifirlama.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnSifreSifirlama.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnSifreSifirlama.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnSifreSifirlama.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnSifreSifirlama.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.BtnSifreSifirlama, "BtnSifreSifirlama");
-            this.BtnSifreSifirlama.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnSifreSifirlama.Name = "BtnSifreSifirlama";
+            this.btnSifreSifirlama.Animated = true;
+            this.btnSifreSifirlama.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSifreSifirlama.BorderRadius = 5;
+            this.btnSifreSifirlama.BorderThickness = 1;
+            this.btnSifreSifirlama.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSifreSifirlama.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSifreSifirlama.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSifreSifirlama.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSifreSifirlama.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.btnSifreSifirlama, "btnSifreSifirlama");
+            this.btnSifreSifirlama.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSifreSifirlama.Name = "btnSifreSifirlama";
             // 
             // TxtBxDogumTarihi
             // 
@@ -252,8 +253,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel LblAdi;
         private Guna.UI2.WinForms.Guna2TextBox TxtBxDogumTarihi;
         private Guna.UI2.WinForms.Guna2TextBox TxtBxAdi;
-        private Guna.UI2.WinForms.Guna2TileButton BtnSifreSifirlama;
-        private Guna.UI2.WinForms.Guna2TileButton btnHatirladim;
+        private Guna.UI2.WinForms.Guna2TileButton btnSifreSifirlama;
+        private Guna.UI2.WinForms.Guna2TileButton btnGeriDon;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblTcNo;
         private Guna.UI2.WinForms.Guna2TextBox TxtBxTcNo;
         private Guna.UI2.WinForms.Guna2TextBox TxtBxSoyadi;

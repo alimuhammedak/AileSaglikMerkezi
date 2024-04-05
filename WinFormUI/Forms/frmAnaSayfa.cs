@@ -16,5 +16,10 @@ namespace WinFormUI
         {
             InitializeComponent();
         }
+
+        private void frmAnaSayfa_Load(object sender, EventArgs e)
+        {
+            lblUser.Text = Program.personel.ad + " " + Program.personel.passwordSalt;
+        }
     }
 }
