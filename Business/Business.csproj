@@ -46,8 +46,6 @@
     <Compile Include="Constans\Messages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-<<<<<<< Updated upstream
-=======
   <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">
@@ -63,6 +61,9 @@
       <Name>Entities</Name>
     </ProjectReference>
   </ItemGroup>
->>>>>>> Stashed changes
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+    <Folder Include="Concrete\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
