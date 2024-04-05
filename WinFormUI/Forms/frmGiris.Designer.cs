@@ -32,18 +32,32 @@
             this.frmGirisElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.frmGirisDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PnlLogo = new Guna.UI2.WinForms.Guna2Panel();
+
+            this.PctrBxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PnlGiris = new Guna.UI2.WinForms.Guna2Panel();
+            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.BtnSfrUntm = new Guna.UI2.WinForms.Guna2TileButton();
+            this.BtnGiris = new Guna.UI2.WinForms.Guna2TileButton();
+
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlGiris = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSifreSifirlama = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnGiris = new Guna.UI2.WinForms.Guna2TileButton();
+
             this.LblSifre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblKullanici = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtSifre = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtKullaniciAdi = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblUyariMesaj = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PnlLogo.SuspendLayout();
+
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxLogo)).BeginInit();
+            this.PnlGiris.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
+
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlGiris.SuspendLayout();
+
             this.SuspendLayout();
             // 
             // frmGirisDragControl
@@ -60,6 +74,84 @@
             this.PnlLogo.Size = new System.Drawing.Size(467, 560);
             this.PnlLogo.TabIndex = 0;
             // 
+
+            // PctrBxLogo
+            // 
+            this.PctrBxLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PctrBxLogo.Image = global::WinFormUI.Properties.Resources.ORTALI_LOGO_TÜRKÇE;
+            this.PctrBxLogo.ImageRotate = 0F;
+            this.PctrBxLogo.Location = new System.Drawing.Point(0, 0);
+            this.PctrBxLogo.Name = "PctrBxLogo";
+            this.PctrBxLogo.Size = new System.Drawing.Size(467, 560);
+            this.PctrBxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctrBxLogo.TabIndex = 0;
+            this.PctrBxLogo.TabStop = false;
+            // 
+            // PnlGiris
+            // 
+            this.PnlGiris.Controls.Add(this.PctrBxClose);
+            this.PnlGiris.Controls.Add(this.BtnSfrUntm);
+            this.PnlGiris.Controls.Add(this.BtnGiris);
+            this.PnlGiris.Controls.Add(this.LblSifre);
+            this.PnlGiris.Controls.Add(this.LblKullanici);
+            this.PnlGiris.Controls.Add(this.TxtBxSifre);
+            this.PnlGiris.Controls.Add(this.TxtBxKullanici);
+            this.PnlGiris.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlGiris.Location = new System.Drawing.Point(467, 0);
+            this.PnlGiris.Name = "PnlGiris";
+            this.PnlGiris.Size = new System.Drawing.Size(715, 560);
+            this.PnlGiris.TabIndex = 1;
+            // 
+            // PctrBxClose
+            // 
+            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.Multiply;
+            this.PctrBxClose.ImageRotate = 0F;
+            this.PctrBxClose.Location = new System.Drawing.Point(667, 3);
+            this.PctrBxClose.Name = "PctrBxClose";
+            this.PctrBxClose.Size = new System.Drawing.Size(45, 45);
+            this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctrBxClose.TabIndex = 6;
+            this.PctrBxClose.TabStop = false;
+            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
+            // 
+            // BtnSfrUntm
+            // 
+            this.BtnSfrUntm.Animated = true;
+            this.BtnSfrUntm.BorderColor = System.Drawing.Color.Transparent;
+            this.BtnSfrUntm.BorderRadius = 5;
+            this.BtnSfrUntm.BorderThickness = 1;
+            this.BtnSfrUntm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnSfrUntm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnSfrUntm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnSfrUntm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnSfrUntm.FillColor = System.Drawing.Color.Transparent;
+            this.BtnSfrUntm.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.BtnSfrUntm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BtnSfrUntm.Location = new System.Drawing.Point(461, 335);
+            this.BtnSfrUntm.Name = "BtnSfrUntm";
+            this.BtnSfrUntm.Size = new System.Drawing.Size(117, 33);
+            this.BtnSfrUntm.TabIndex = 5;
+            this.BtnSfrUntm.Text = "Şifremi Unuttum";
+            // 
+            // BtnGiris
+            // 
+            this.BtnGiris.Animated = true;
+            this.BtnGiris.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BtnGiris.BorderRadius = 5;
+            this.BtnGiris.BorderThickness = 1;
+            this.BtnGiris.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnGiris.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnGiris.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnGiris.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnGiris.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BtnGiris.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.BtnGiris.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BtnGiris.Location = new System.Drawing.Point(139, 374);
+            this.BtnGiris.Name = "BtnGiris";
+            this.BtnGiris.Size = new System.Drawing.Size(439, 33);
+            this.BtnGiris.TabIndex = 4;
+            this.BtnGiris.Text = "Giriş";
+
             // pbLogo
             // 
             this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
@@ -126,6 +218,7 @@
             this.btnGiris.TabIndex = 4;
             this.btnGiris.Text = "Giriş";
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
+
             // 
             // LblSifre
             // 
@@ -210,9 +303,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGiris";
             this.PnlLogo.ResumeLayout(false);
+
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxLogo)).EndInit();
+            this.PnlGiris.ResumeLayout(false);
+            this.PnlGiris.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
+
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.pnlGiris.ResumeLayout(false);
             this.pnlGiris.PerformLayout();
+
             this.ResumeLayout(false);
 
         }
@@ -228,8 +328,14 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSifre;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblSifre;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblKullanici;
+
+        private Guna.UI2.WinForms.Guna2TileButton BtnGiris;
+        private Guna.UI2.WinForms.Guna2TileButton BtnSfrUntm;
+        private Guna.UI2.WinForms.Guna2PictureBox PctrBxClose;
+
         private Guna.UI2.WinForms.Guna2TileButton btnGiris;
         private Guna.UI2.WinForms.Guna2TileButton btnSifreSifirlama;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblUyariMesaj;
+
     }
 }

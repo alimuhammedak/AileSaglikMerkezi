@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.frmBilgiEkraniElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.BilgiEkraniDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.frmBilgiEkraniDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PnlHastaBilgi = new Guna.UI2.WinForms.Guna2Panel();
             this.LblEvliMi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblCocukSayisi = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -44,10 +44,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PctrBoxHasta)).BeginInit();
             this.SuspendLayout();
             // 
-            // BilgiEkraniDragControl
+            // frmBilgiEkraniDragControl
             // 
-            this.BilgiEkraniDragControl.DockIndicatorTransparencyValue = 0.6D;
-            this.BilgiEkraniDragControl.UseTransparentDrag = true;
+            this.frmBilgiEkraniDragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.frmBilgiEkraniDragControl.UseTransparentDrag = true;
             // 
             // PnlHastaBilgi
             // 
@@ -59,10 +59,9 @@
             this.PnlHastaBilgi.Controls.Add(this.LblHastaSoyadi);
             this.PnlHastaBilgi.Controls.Add(this.LblHastaAdi);
             this.PnlHastaBilgi.Controls.Add(this.PctrBoxHasta);
-            this.PnlHastaBilgi.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlHastaBilgi.Location = new System.Drawing.Point(0, 0);
             this.PnlHastaBilgi.Name = "PnlHastaBilgi";
-            this.PnlHastaBilgi.Size = new System.Drawing.Size(535, 606);
+            this.PnlHastaBilgi.Size = new System.Drawing.Size(535, 280);
             this.PnlHastaBilgi.TabIndex = 42;
             // 
             // LblEvliMi
@@ -165,7 +164,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse frmBilgiEkraniElipse;
-        private Guna.UI2.WinForms.Guna2DragControl BilgiEkraniDragControl;
+        private Guna.UI2.WinForms.Guna2DragControl frmBilgiEkraniDragControl;
         private Guna.UI2.WinForms.Guna2Panel PnlHastaBilgi;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblEvliMi;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblCocukSayisi;

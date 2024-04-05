@@ -155,10 +155,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\aile-sagligi-merkezi-logo.jpg" />
+    <None Include="Resources\ORTALI LOGO TÜRKÇE.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ORTALI LOGO TÜRKÇE.png" />
+    <None Include="Resources\Multiply.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
