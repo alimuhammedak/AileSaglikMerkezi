@@ -35,11 +35,13 @@
             this.frmDoktorHastaCagirmaElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.frmDoktorHastaCagirmaDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PnlHastaCagirma = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PnlHastaSiraListesi = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.LblSifreSifirlama = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.PnlHastaCagirma.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.PnlHastaSiraListesi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -52,12 +54,25 @@
             // 
             // PnlHastaCagirma
             // 
+            this.PnlHastaCagirma.Controls.Add(this.PctrBxClose);
             this.PnlHastaCagirma.Controls.Add(this.guna2PictureBox1);
             this.PnlHastaCagirma.Dock = System.Windows.Forms.DockStyle.Right;
             this.PnlHastaCagirma.Location = new System.Drawing.Point(715, 0);
             this.PnlHastaCagirma.Name = "PnlHastaCagirma";
             this.PnlHastaCagirma.Size = new System.Drawing.Size(467, 560);
             this.PnlHastaCagirma.TabIndex = 0;
+            // 
+            // PctrBxClose
+            // 
+            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.Multiply;
+            this.PctrBxClose.ImageRotate = 0F;
+            this.PctrBxClose.Location = new System.Drawing.Point(419, 3);
+            this.PctrBxClose.Name = "PctrBxClose";
+            this.PctrBxClose.Size = new System.Drawing.Size(45, 45);
+            this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctrBxClose.TabIndex = 23;
+            this.PctrBxClose.TabStop = false;
+            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
             // 
             // guna2PictureBox1
             // 
@@ -80,6 +95,16 @@
             this.PnlHastaSiraListesi.Size = new System.Drawing.Size(709, 560);
             this.PnlHastaSiraListesi.TabIndex = 1;
             // 
+            // LblSifreSifirlama
+            // 
+            this.LblSifreSifirlama.BackColor = System.Drawing.Color.Transparent;
+            this.LblSifreSifirlama.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.LblSifreSifirlama.Location = new System.Drawing.Point(272, 35);
+            this.LblSifreSifirlama.Name = "LblSifreSifirlama";
+            this.LblSifreSifirlama.Size = new System.Drawing.Size(130, 23);
+            this.LblSifreSifirlama.TabIndex = 22;
+            this.LblSifreSifirlama.Text = "Hasta Sıra Listesi";
+            // 
             // guna2DataGridView1
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -92,7 +117,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ColumnHeadersHeight = 4;
+            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -118,7 +144,7 @@
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
             this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -128,16 +154,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // LblSifreSifirlama
-            // 
-            this.LblSifreSifirlama.BackColor = System.Drawing.Color.Transparent;
-            this.LblSifreSifirlama.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.LblSifreSifirlama.Location = new System.Drawing.Point(272, 35);
-            this.LblSifreSifirlama.Name = "LblSifreSifirlama";
-            this.LblSifreSifirlama.Size = new System.Drawing.Size(130, 23);
-            this.LblSifreSifirlama.TabIndex = 22;
-            this.LblSifreSifirlama.Text = "Hasta Sıra Listesi";
             // 
             // frmDoktorHastaCagirma
             // 
@@ -151,6 +167,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDoktorHastaCagirma";
             this.PnlHastaCagirma.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.PnlHastaSiraListesi.ResumeLayout(false);
             this.PnlHastaSiraListesi.PerformLayout();
@@ -168,5 +185,6 @@
         private Guna.UI2.WinForms.Guna2Panel PnlHastaSiraListesi;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblSifreSifirlama;
+        private Guna.UI2.WinForms.Guna2PictureBox PctrBxClose;
     }
 }

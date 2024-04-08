@@ -63,6 +63,16 @@ namespace WinFormUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Multiply {
+            get {
+                object obj = ResourceManager.GetObject("Multiply", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ORTALI_LOGO_TÜRKÇE {
             get {
                 object obj = ResourceManager.GetObject("ORTALI_LOGO_TÜRKÇE", resourceCulture);

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +22,16 @@ namespace WinFormUI.Forms
         private void TxtBxYeniSfr_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void PctrBxClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnGeriDon_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
