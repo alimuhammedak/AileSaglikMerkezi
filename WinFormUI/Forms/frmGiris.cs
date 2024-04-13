@@ -23,6 +23,11 @@ namespace WinFormUI
             InitializeComponent();
         }
 
+        private void PctrBxClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void btnGiris_Click(object sender, EventArgs e)
         {
             var result = _personelService.GetByUserNameAndPassword(txtKullaniciAdi.Text, txtSifre.Text);

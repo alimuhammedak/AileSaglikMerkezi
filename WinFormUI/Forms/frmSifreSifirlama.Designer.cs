@@ -45,9 +45,11 @@
             this.LblDogumTarihi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblAdi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PnlAciklama = new Guna.UI2.WinForms.Guna2Panel();
+            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PctrBxAciklamaResim = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PnlSifreSifirlama.SuspendLayout();
             this.PnlAciklama.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxAciklamaResim)).BeginInit();
             this.SuspendLayout();
             // 
@@ -204,9 +206,19 @@
             // 
             // PnlAciklama
             // 
+            this.PnlAciklama.Controls.Add(this.PctrBxClose);
             this.PnlAciklama.Controls.Add(this.PctrBxAciklamaResim);
             resources.ApplyResources(this.PnlAciklama, "PnlAciklama");
             this.PnlAciklama.Name = "PnlAciklama";
+            // 
+            // PctrBxClose
+            // 
+            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.Multiply;
+            this.PctrBxClose.ImageRotate = 0F;
+            resources.ApplyResources(this.PctrBxClose, "PctrBxClose");
+            this.PctrBxClose.Name = "PctrBxClose";
+            this.PctrBxClose.TabStop = false;
+            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
             // 
             // PctrBxAciklamaResim
             // 
@@ -227,6 +239,7 @@
             this.PnlSifreSifirlama.ResumeLayout(false);
             this.PnlSifreSifirlama.PerformLayout();
             this.PnlAciklama.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxAciklamaResim)).EndInit();
             this.ResumeLayout(false);
 
@@ -249,5 +262,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel LblSifreSifirlama;
         private Guna.UI2.WinForms.Guna2Panel PnlAciklama;
         private Guna.UI2.WinForms.Guna2PictureBox PctrBxAciklamaResim;
+        private Guna.UI2.WinForms.Guna2PictureBox PctrBxClose;
     }
 }

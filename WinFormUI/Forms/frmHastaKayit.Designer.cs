@@ -38,12 +38,22 @@
             this.frmHastaKayitElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.frmHastaKayitDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PnlHastaBilgisi = new Guna.UI2.WinForms.Guna2Panel();
+
             this.dgvHastaKayit = new Guna.UI2.WinForms.Guna2DataGridView();
             this.lblKayitTarihi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblProtokolNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblKayit = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblProtokol = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtTcNo = new Guna.UI2.WinForms.Guna2TextBox();
+
+            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.DataGwHastaKayit = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.LblKayitTarihi = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LblProtokolNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LblKayit = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LblProtokol = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.TxtBxTcNo = new Guna.UI2.WinForms.Guna2TextBox();
+
             this.PnlHastaDetay = new Guna.UI2.WinForms.Guna2Panel();
             this.LblEvliMi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblCocukSayisi = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -51,6 +61,7 @@
             this.LblHastaDogumTarihi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblHastaCinsiyet = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblHastaSoyadi = new Guna.UI2.WinForms.Guna2HtmlLabel();
+
             this.lblHastaAdi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pctrBoxHasta = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlDoktor = new Guna.UI2.WinForms.Guna2Panel();
@@ -63,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctrBoxHasta)).BeginInit();
             this.pnlDoktor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDoktorBilgisi)).BeginInit();
+
             this.SuspendLayout();
             // 
             // frmHastaKayitDragControl
@@ -72,12 +84,14 @@
             // 
             // PnlHastaBilgisi
             // 
+
             this.PnlHastaBilgisi.Controls.Add(this.dgvHastaKayit);
             this.PnlHastaBilgisi.Controls.Add(this.lblKayitTarihi);
             this.PnlHastaBilgisi.Controls.Add(this.lblProtokolNo);
             this.PnlHastaBilgisi.Controls.Add(this.lblKayit);
             this.PnlHastaBilgisi.Controls.Add(this.lblProtokol);
             this.PnlHastaBilgisi.Controls.Add(this.txtTcNo);
+
             this.PnlHastaBilgisi.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHastaBilgisi.Location = new System.Drawing.Point(0, 0);
             this.PnlHastaBilgisi.Name = "PnlHastaBilgisi";
@@ -85,12 +99,25 @@
             this.PnlHastaBilgisi.TabIndex = 0;
             this.PnlHastaBilgisi.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlHastaKayit_Paint);
             // 
+
             // dgvHastaKayit
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvHastaKayit.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvHastaKayit.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvHastaKayit.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
+            // PctrBxClose
+            // 
+            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.Multiply;
+            this.PctrBxClose.ImageRotate = 0F;
+            this.PctrBxClose.Location = new System.Drawing.Point(1134, 3);
+            this.PctrBxClose.Name = "PctrBxClose";
+            this.PctrBxClose.Size = new System.Drawing.Size(45, 45);
+            this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctrBxClose.TabIndex = 22;
+            this.PctrBxClose.TabStop = false;
+            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -98,9 +125,11 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+
             this.dgvHastaKayit.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvHastaKayit.ColumnHeadersHeight = 4;
             this.dgvHastaKayit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -108,6 +137,7 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+
             this.dgvHastaKayit.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvHastaKayit.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.dgvHastaKayit.Location = new System.Drawing.Point(31, 86);
@@ -196,83 +226,36 @@
             this.txtTcNo.SelectedText = "";
             this.txtTcNo.Size = new System.Drawing.Size(196, 30);
             this.txtTcNo.TabIndex = 16;
-            // 
-            // PnlHastaDetay
-            // 
-            this.PnlHastaDetay.Controls.Add(this.LblEvliMi);
-            this.PnlHastaDetay.Controls.Add(this.LblCocukSayisi);
-            this.PnlHastaDetay.Controls.Add(this.LblHastaAdresi);
-            this.PnlHastaDetay.Controls.Add(this.LblHastaDogumTarihi);
-            this.PnlHastaDetay.Controls.Add(this.LblHastaCinsiyet);
-            this.PnlHastaDetay.Controls.Add(this.LblHastaSoyadi);
-            this.PnlHastaDetay.Controls.Add(this.lblHastaAdi);
-            this.PnlHastaDetay.Controls.Add(this.pctrBoxHasta);
-            this.PnlHastaDetay.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlHastaDetay.Location = new System.Drawing.Point(0, 278);
-            this.PnlHastaDetay.Name = "PnlHastaDetay";
-            this.PnlHastaDetay.Size = new System.Drawing.Size(535, 328);
-            this.PnlHastaDetay.TabIndex = 41;
-            // 
-            // LblEvliMi
-            // 
-            this.LblEvliMi.BackColor = System.Drawing.Color.Transparent;
-            this.LblEvliMi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblEvliMi.Location = new System.Drawing.Point(31, 223);
-            this.LblEvliMi.Name = "LblEvliMi";
-            this.LblEvliMi.Size = new System.Drawing.Size(12, 17);
-            this.LblEvliMi.TabIndex = 58;
-            this.LblEvliMi.Text = "...";
-            // 
-            // LblCocukSayisi
-            // 
-            this.LblCocukSayisi.BackColor = System.Drawing.Color.Transparent;
-            this.LblCocukSayisi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblCocukSayisi.Location = new System.Drawing.Point(31, 200);
-            this.LblCocukSayisi.Name = "LblCocukSayisi";
-            this.LblCocukSayisi.Size = new System.Drawing.Size(12, 17);
-            this.LblCocukSayisi.TabIndex = 57;
-            this.LblCocukSayisi.Text = "...";
-            // 
-            // LblHastaAdresi
-            // 
-            this.LblHastaAdresi.AutoSize = false;
-            this.LblHastaAdresi.BackColor = System.Drawing.Color.Transparent;
-            this.LblHastaAdresi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblHastaAdresi.Location = new System.Drawing.Point(200, 116);
-            this.LblHastaAdresi.Name = "LblHastaAdresi";
-            this.LblHastaAdresi.Size = new System.Drawing.Size(231, 48);
-            this.LblHastaAdresi.TabIndex = 56;
-            this.LblHastaAdresi.Text = "...";
-            // 
-            // LblHastaDogumTarihi
-            // 
-            this.LblHastaDogumTarihi.BackColor = System.Drawing.Color.Transparent;
-            this.LblHastaDogumTarihi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblHastaDogumTarihi.Location = new System.Drawing.Point(200, 93);
-            this.LblHastaDogumTarihi.Name = "LblHastaDogumTarihi";
-            this.LblHastaDogumTarihi.Size = new System.Drawing.Size(12, 17);
-            this.LblHastaDogumTarihi.TabIndex = 55;
-            this.LblHastaDogumTarihi.Text = "...";
-            // 
-            // LblHastaCinsiyet
-            // 
-            this.LblHastaCinsiyet.BackColor = System.Drawing.Color.Transparent;
-            this.LblHastaCinsiyet.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblHastaCinsiyet.Location = new System.Drawing.Point(200, 70);
-            this.LblHastaCinsiyet.Name = "LblHastaCinsiyet";
-            this.LblHastaCinsiyet.Size = new System.Drawing.Size(12, 17);
-            this.LblHastaCinsiyet.TabIndex = 54;
-            this.LblHastaCinsiyet.Text = "...";
-            // 
-            // LblHastaSoyadi
-            // 
-            this.LblHastaSoyadi.BackColor = System.Drawing.Color.Transparent;
-            this.LblHastaSoyadi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblHastaSoyadi.Location = new System.Drawing.Point(200, 47);
-            this.LblHastaSoyadi.Name = "LblHastaSoyadi";
-            this.LblHastaSoyadi.Size = new System.Drawing.Size(12, 17);
-            this.LblHastaSoyadi.TabIndex = 53;
-            this.LblHastaSoyadi.Text = "...";
+          
+            this.DataGwHastaKayit.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGwHastaKayit.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.DataGwHastaKayit.Location = new System.Drawing.Point(31, 86);
+            this.DataGwHastaKayit.Name = "DataGwHastaKayit";
+            this.DataGwHastaKayit.RowHeadersVisible = false;
+            this.DataGwHastaKayit.Size = new System.Drawing.Size(1117, 170);
+            this.DataGwHastaKayit.TabIndex = 21;
+            this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.DataGwHastaKayit.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.DataGwHastaKayit.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.Height = 4;
+            this.DataGwHastaKayit.ThemeStyle.ReadOnly = false;
+            this.DataGwHastaKayit.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.DataGwHastaKayit.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DataGwHastaKayit.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DataGwHastaKayit.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGwHastaKayit.ThemeStyle.RowsStyle.Height = 22;
+            this.DataGwHastaKayit.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGwHastaKayit.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+
             // 
             // lblHastaAdi
             // 
@@ -329,6 +312,7 @@
             this.dgvDoktorBilgisi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvDoktorBilgisi.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvDoktorBilgisi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -336,9 +320,11 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+
             this.dgvDoktorBilgisi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvDoktorBilgisi.ColumnHeadersHeight = 4;
             this.dgvDoktorBilgisi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -346,6 +332,7 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+          
             this.dgvDoktorBilgisi.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvDoktorBilgisi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.dgvDoktorBilgisi.Location = new System.Drawing.Point(45, 24);
@@ -410,6 +397,7 @@
             this.Load += new System.EventHandler(this.frmHastaKayit_Load);
             this.PnlHastaBilgisi.ResumeLayout(false);
             this.PnlHastaBilgisi.PerformLayout();
+          
             ((System.ComponentModel.ISupportInitialize)(this.dgvHastaKayit)).EndInit();
             this.PnlHastaDetay.ResumeLayout(false);
             this.PnlHastaDetay.PerformLayout();
@@ -444,5 +432,6 @@
         private Guna.UI2.WinForms.Guna2TileButton btnIptal;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDoktorBilgisi;
         private Guna.UI2.WinForms.Guna2TileButton btnHastaKayit;
+
     }
 }
