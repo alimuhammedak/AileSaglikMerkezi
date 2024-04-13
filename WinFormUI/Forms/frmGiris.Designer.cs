@@ -34,13 +34,13 @@
             this.PnlLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlGiris = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblUyariMesaj = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSifreSifirlama = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnGiris = new Guna.UI2.WinForms.Guna2TileButton();
             this.LblSifre = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblKullanici = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtSifre = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtKullaniciAdi = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblUyariMesaj = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlGiris.SuspendLayout();
@@ -86,6 +86,16 @@
             this.pnlGiris.Name = "pnlGiris";
             this.pnlGiris.Size = new System.Drawing.Size(715, 560);
             this.pnlGiris.TabIndex = 1;
+            // 
+            // lblUyariMesaj
+            // 
+            this.lblUyariMesaj.BackColor = System.Drawing.Color.Transparent;
+            this.lblUyariMesaj.Location = new System.Drawing.Point(350, 128);
+            this.lblUyariMesaj.Name = "lblUyariMesaj";
+            this.lblUyariMesaj.Size = new System.Drawing.Size(31, 15);
+            this.lblUyariMesaj.TabIndex = 6;
+            this.lblUyariMesaj.Text = "Mesaj";
+            this.lblUyariMesaj.Visible = false;
             // 
             // btnSifreSifirlama
             // 
@@ -151,7 +161,7 @@
             // 
             this.txtSifre.BorderRadius = 5;
             this.txtSifre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSifre.DefaultText = "";
+            this.txtSifre.DefaultText = "password112";
             this.txtSifre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtSifre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSifre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -172,7 +182,7 @@
             // 
             this.txtKullaniciAdi.BorderRadius = 5;
             this.txtKullaniciAdi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtKullaniciAdi.DefaultText = "";
+            this.txtKullaniciAdi.DefaultText = "user";
             this.txtKullaniciAdi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtKullaniciAdi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtKullaniciAdi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -187,16 +197,6 @@
             this.txtKullaniciAdi.SelectedText = "";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(439, 30);
             this.txtKullaniciAdi.TabIndex = 0;
-            // 
-            // lblUyariMesaj
-            // 
-            this.lblUyariMesaj.BackColor = System.Drawing.Color.Transparent;
-            this.lblUyariMesaj.Location = new System.Drawing.Point(350, 128);
-            this.lblUyariMesaj.Name = "lblUyariMesaj";
-            this.lblUyariMesaj.Size = new System.Drawing.Size(31, 15);
-            this.lblUyariMesaj.TabIndex = 6;
-            this.lblUyariMesaj.Text = "Mesaj";
-            this.lblUyariMesaj.Visible = false;
             // 
             // frmGiris
             // 

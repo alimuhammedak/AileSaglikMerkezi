@@ -33,5 +33,7 @@ namespace Business.Constans
         public static readonly string PersonelUpdated = "Personel güncellendi";
         internal static readonly string PersonelNotFound = "Personel bulunamadı";
         internal static readonly string PersonelFound = "Personel bulundu";
+        internal static readonly string PersonelNameIsNotEmpty = "Personel adı boş olamaz";
+        internal static readonly string HastaAdIsNotEmpty = "Hasta adı boş olamaz";
     }
 }

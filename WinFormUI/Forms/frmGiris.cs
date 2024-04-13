@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Business.Abstract;
+using Business.DependencyResolvers.Autofac;
 using Core.Utilities.Result;
 using WinFormUI.Forms;
 
@@ -16,9 +17,9 @@ namespace WinFormUI
     public partial class frmGiris : Form
     {
         IPersonelService _personelService;
-        public frmGiris(IPersonelService personelService)
+        public frmGiris()
         {
-            _personelService = personelService;
+            _personelService = InstanceFactory.GetInstance<IPersonelService>();
             InitializeComponent();
         }
 

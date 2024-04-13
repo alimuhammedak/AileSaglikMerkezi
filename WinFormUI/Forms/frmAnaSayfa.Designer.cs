@@ -32,6 +32,8 @@
             this.frmAnaSayfaElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.frmAnaSayfaDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.lblUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dgvPersonel = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonel)).BeginInit();
             this.SuspendLayout();
             // 
             // frmAnaSayfaDragControl
@@ -47,18 +49,29 @@
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(3, 2);
             this.lblUser.TabIndex = 0;
+            this.lblUser.Text = null;
+            // 
+            // dgvPersonel
+            // 
+            this.dgvPersonel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPersonel.Location = new System.Drawing.Point(55, 131);
+            this.dgvPersonel.Name = "dgvPersonel";
+            this.dgvPersonel.Size = new System.Drawing.Size(1017, 375);
+            this.dgvPersonel.TabIndex = 1;
             // 
             // frmAnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 560);
+            this.Controls.Add(this.dgvPersonel);
             this.Controls.Add(this.lblUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAnaSayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAnaSayfa";
             this.Load += new System.EventHandler(this.frmAnaSayfa_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,5 +82,6 @@
         private Guna.UI2.WinForms.Guna2Elipse frmAnaSayfaElipse;
         private Guna.UI2.WinForms.Guna2DragControl frmAnaSayfaDragControl;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblUser;
+        private System.Windows.Forms.DataGridView dgvPersonel;
     }
 }

@@ -7,6 +7,7 @@ namespace DataAccess.Concrete.EntityFramework
     {
         public SODBContext() : base(@"data source=.;initial catalog=SODB;integrated security=True;encrypt=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework")
         {
+
         }
 
         public virtual DbSet<Cinsiyet> Cinsiyets { get; set; }

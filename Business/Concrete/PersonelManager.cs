@@ -11,6 +11,7 @@ using Entities.Entity;
 
 namespace Business.Concrete
 {
+
     public class PersonelManager : IPersonelService
     {
         IPersonelDal _personelDal;
@@ -58,4 +59,5 @@ namespace Business.Concrete
             return new SuccessResult(Messages.PersonelUpdated);
         }
     }
+
 }

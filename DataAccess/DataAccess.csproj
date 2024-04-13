@@ -59,12 +59,11 @@
     <Compile Include="Concrete\EntityFramework\EfHastaDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfIlacDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfPersonelDal.cs" />
+    <Compile Include="Concrete\InMemory\InPersonelDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Concrete\EntityFramework\SODBContext.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Concrete\InMemory\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{6E7982E0-3617-49D8-983D-4D476026A265}</Project>

@@ -17,13 +17,12 @@ namespace ConsoleUI
             HastaManager hastaManager = new HastaManager(new EfHastaDal());
             IlacManager ilacManager = new IlacManager(new EfIlacDal());
 
-            //var result = hastaManager.Add(new Hasta
-            //{
-            //    ad = "Ali",
-            //    soyad = "Veli",
-            //});
+            var result = hastaManager.Add(new Hasta
+            {
+                soyad = "Veli",
+            });
 
-            //Console.WriteLine(result.IsSuccess + " " +result.Message);
+            Console.WriteLine(result.IsSuccess + " " + result.Message);
             Console.ReadLine();
         }
     }

@@ -6,12 +6,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Business.Abstract;
 using Business.Constans;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspect.Autofac.Validation;
 using Core.Utilities.Result;
 using DataAccess.Abstract;
 using Entities.Entity;
 
 namespace Business.Concrete
 {
+
     public class HastaManager : IHastaService
     {
         private IHastaDal _hastaDal;
@@ -21,14 +24,9 @@ namespace Business.Concrete
             _hastaDal = hastaDal;
         }
 
+        [ValidationAspect(typeof(HastaValidator))]
         public IResult Add(Hasta hasta)
         {
-            //Validation
-            if (hasta.ad.Length < 2 )
-            {
-                return new ErrorResult("Hasta adı en az 2 karakter olmalıdır");
-            }
-
             //Business codes
 
             //hasat kayıt sadece 08-17 saatleri arasında yapılabilir

@@ -20,6 +20,8 @@ namespace Entities.Entity
 
         public bool? aktifMi { get; set; }
 
+        public string hastalikTani { get; set; }
+
         public virtual Hasta Hasta { get; set; }
 
         public virtual Hastalik Hastalik { get; set; }
