@@ -33,8 +33,8 @@
             this.frmGirisDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PnlLogo = new Guna.UI2.WinForms.Guna2Panel();
 
-            this.PctrBxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.PnlGiris = new Guna.UI2.WinForms.Guna2Panel();
+            //this.PctrBxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            //this.PnlGiris = new Guna.UI2.WinForms.Guna2Panel();
             this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.BtnSfrUntm = new Guna.UI2.WinForms.Guna2TileButton();
             this.BtnGiris = new Guna.UI2.WinForms.Guna2TileButton();
@@ -51,8 +51,8 @@
             this.txtKullaniciAdi = new Guna.UI2.WinForms.Guna2TextBox();
             this.PnlLogo.SuspendLayout();
 
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxLogo)).BeginInit();
-            this.PnlGiris.SuspendLayout();
+            //((System.ComponentModel.ISupportInitialize)(this.PctrBxLogo)).BeginInit();
+            //this.PnlGiris.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
 
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -73,34 +73,33 @@
             this.PnlLogo.Name = "PnlLogo";
             this.PnlLogo.Size = new System.Drawing.Size(467, 560);
             this.PnlLogo.TabIndex = 0;
-            // 
-
-            // PctrBxLogo
-            // 
-            this.PctrBxLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PctrBxLogo.Image = global::WinFormUI.Properties.Resources.ORTALI_LOGO_TÜRKÇE;
-            this.PctrBxLogo.ImageRotate = 0F;
-            this.PctrBxLogo.Location = new System.Drawing.Point(0, 0);
-            this.PctrBxLogo.Name = "PctrBxLogo";
-            this.PctrBxLogo.Size = new System.Drawing.Size(467, 560);
-            this.PctrBxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctrBxLogo.TabIndex = 0;
-            this.PctrBxLogo.TabStop = false;
-            // 
-            // PnlGiris
-            // 
-            this.PnlGiris.Controls.Add(this.PctrBxClose);
-            this.PnlGiris.Controls.Add(this.BtnSfrUntm);
-            this.PnlGiris.Controls.Add(this.BtnGiris);
-            this.PnlGiris.Controls.Add(this.LblSifre);
-            this.PnlGiris.Controls.Add(this.LblKullanici);
-            this.PnlGiris.Controls.Add(this.TxtBxSifre);
-            this.PnlGiris.Controls.Add(this.TxtBxKullanici);
-            this.PnlGiris.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlGiris.Location = new System.Drawing.Point(467, 0);
-            this.PnlGiris.Name = "PnlGiris";
-            this.PnlGiris.Size = new System.Drawing.Size(715, 560);
-            this.PnlGiris.TabIndex = 1;
+            //// 
+            //// PctrBxLogo
+            //// 
+            //this.PctrBxLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            //this.PctrBxLogo.Image = global::WinFormUI.Properties.Resources.ORTALI_LOGO_TÜRKÇE;
+            //this.PctrBxLogo.ImageRotate = 0F;
+            //this.PctrBxLogo.Location = new System.Drawing.Point(0, 0);
+            //this.PctrBxLogo.Name = "PctrBxLogo";
+            //this.PctrBxLogo.Size = new System.Drawing.Size(467, 560);
+            //this.PctrBxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            //this.PctrBxLogo.TabIndex = 0;
+            //this.PctrBxLogo.TabStop = false;
+            //// 
+            //// PnlGiris
+            //// 
+            //this.PnlGiris.Controls.Add(this.PctrBxClose);
+            //this.PnlGiris.Controls.Add(this.BtnSfrUntm);
+            //this.PnlGiris.Controls.Add(this.BtnGiris);
+            //this.PnlGiris.Controls.Add(this.LblSifre);
+            //this.PnlGiris.Controls.Add(this.LblKullanici);
+            //this.PnlGiris.Controls.Add(this.TxtBxSifre);
+            //this.PnlGiris.Controls.Add(this.TxtBxKullanici);
+            //this.PnlGiris.Dock = System.Windows.Forms.DockStyle.Fill;
+            //this.PnlGiris.Location = new System.Drawing.Point(467, 0);
+            //this.PnlGiris.Name = "PnlGiris";
+            //this.PnlGiris.Size = new System.Drawing.Size(715, 560);
+            //this.PnlGiris.TabIndex = 1;
             // 
             // PctrBxClose
             // 
@@ -304,9 +303,9 @@
             this.Text = "frmGiris";
             this.PnlLogo.ResumeLayout(false);
 
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxLogo)).EndInit();
-            this.PnlGiris.ResumeLayout(false);
-            this.PnlGiris.PerformLayout();
+            //((System.ComponentModel.ISupportInitialize)(this.PctrBxLogo)).EndInit();
+            //this.PnlGiris.ResumeLayout(false);
+            //this.PnlGiris.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
 
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();

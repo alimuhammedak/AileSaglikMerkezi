@@ -19,6 +19,8 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<EfPersonelDal>().As<IPersonelDal>().SingleInstance();
 
 
+
+
         }
     }
 }

@@ -9,7 +9,7 @@ using Entities.Entity;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfIlacDal : EfEntityRepositoryBase<Ilac, SODBContext>, IIlacDal
+    public class EfIlacDal : EfEntityRepositoryBase<Ilac, SOContext>, IIlacDal
     {
         
     }

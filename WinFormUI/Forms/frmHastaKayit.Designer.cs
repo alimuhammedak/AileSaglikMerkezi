@@ -46,13 +46,13 @@
             this.lblProtokol = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtTcNo = new Guna.UI2.WinForms.Guna2TextBox();
 
-            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.DataGwHastaKayit = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.LblKayitTarihi = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LblProtokolNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LblKayit = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LblProtokol = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.TxtBxTcNo = new Guna.UI2.WinForms.Guna2TextBox();
+            //this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            //this.DataGwHastaKayit = new Guna.UI2.WinForms.Guna2DataGridView();
+            //this.LblKayitTarihi = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            //this.LblProtokolNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            //this.LblKayit = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            //this.LblProtokol = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            //this.TxtBxTcNo = new Guna.UI2.WinForms.Guna2TextBox();
 
             this.PnlHastaDetay = new Guna.UI2.WinForms.Guna2Panel();
             this.LblEvliMi = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -109,15 +109,15 @@
 
             // PctrBxClose
             // 
-            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.Multiply;
-            this.PctrBxClose.ImageRotate = 0F;
-            this.PctrBxClose.Location = new System.Drawing.Point(1134, 3);
-            this.PctrBxClose.Name = "PctrBxClose";
-            this.PctrBxClose.Size = new System.Drawing.Size(45, 45);
-            this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctrBxClose.TabIndex = 22;
-            this.PctrBxClose.TabStop = false;
-            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
+            //this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.Multiply;
+            //this.PctrBxClose.ImageRotate = 0F;
+            //this.PctrBxClose.Location = new System.Drawing.Point(1134, 3);
+            //this.PctrBxClose.Name = "PctrBxClose";
+            //this.PctrBxClose.Size = new System.Drawing.Size(45, 45);
+            //this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            //this.PctrBxClose.TabIndex = 22;
+            //this.PctrBxClose.TabStop = false;
+            //this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -227,34 +227,34 @@
             this.txtTcNo.Size = new System.Drawing.Size(196, 30);
             this.txtTcNo.TabIndex = 16;
           
-            this.DataGwHastaKayit.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGwHastaKayit.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.DataGwHastaKayit.Location = new System.Drawing.Point(31, 86);
-            this.DataGwHastaKayit.Name = "DataGwHastaKayit";
-            this.DataGwHastaKayit.RowHeadersVisible = false;
-            this.DataGwHastaKayit.Size = new System.Drawing.Size(1117, 170);
-            this.DataGwHastaKayit.TabIndex = 21;
-            this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.DataGwHastaKayit.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
-            this.DataGwHastaKayit.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DataGwHastaKayit.ThemeStyle.HeaderStyle.Height = 4;
-            this.DataGwHastaKayit.ThemeStyle.ReadOnly = false;
-            this.DataGwHastaKayit.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DataGwHastaKayit.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DataGwHastaKayit.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DataGwHastaKayit.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DataGwHastaKayit.ThemeStyle.RowsStyle.Height = 22;
-            this.DataGwHastaKayit.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGwHastaKayit.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            //this.DataGwHastaKayit.DefaultCellStyle = dataGridViewCellStyle3;
+            //this.DataGwHastaKayit.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            //this.DataGwHastaKayit.Location = new System.Drawing.Point(31, 86);
+            //this.DataGwHastaKayit.Name = "DataGwHastaKayit";
+            //this.DataGwHastaKayit.RowHeadersVisible = false;
+            //this.DataGwHastaKayit.Size = new System.Drawing.Size(1117, 170);
+            //this.DataGwHastaKayit.TabIndex = 21;
+            //this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            //this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.Font = null;
+            //this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            //this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            //this.DataGwHastaKayit.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            //this.DataGwHastaKayit.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            //this.DataGwHastaKayit.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            //this.DataGwHastaKayit.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            //this.DataGwHastaKayit.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            //this.DataGwHastaKayit.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            //this.DataGwHastaKayit.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            //this.DataGwHastaKayit.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            //this.DataGwHastaKayit.ThemeStyle.HeaderStyle.Height = 4;
+            //this.DataGwHastaKayit.ThemeStyle.ReadOnly = false;
+            //this.DataGwHastaKayit.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            //this.DataGwHastaKayit.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            //this.DataGwHastaKayit.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            //this.DataGwHastaKayit.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            //this.DataGwHastaKayit.ThemeStyle.RowsStyle.Height = 22;
+            //this.DataGwHastaKayit.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            //this.DataGwHastaKayit.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 
             // 
             // lblHastaAdi

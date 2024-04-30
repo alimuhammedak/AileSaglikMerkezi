@@ -10,7 +10,7 @@ using Entities.Entity;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfPersonelDal:EfEntityRepositoryBase<Personel,SODBContext>,IPersonelDal
+    public class EfPersonelDal:EfEntityRepositoryBase<Personel,SOContext>,IPersonelDal
     {
     }
 }

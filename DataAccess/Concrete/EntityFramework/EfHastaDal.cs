@@ -9,7 +9,7 @@ using DataAccess.Abstract;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfHastaDal:EfEntityRepositoryBase<Hasta,SODBContext>,IHastaDal
+    public class EfHastaDal:EfEntityRepositoryBase<Hasta,SOContext>,IHastaDal
     {
 
     }

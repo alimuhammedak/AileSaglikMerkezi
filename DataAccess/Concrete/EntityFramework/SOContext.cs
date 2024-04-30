@@ -1,13 +1,16 @@
-using System.Data.Entity;
 using Entities.Entity;
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
+using System.Linq;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public partial class SODBContext : DbContext
+    public partial class SOContext : DbContext
     {
-        public SODBContext() : base(@"data source=.;initial catalog=SODB;integrated security=True;encrypt=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework")
+        public SOContext()
+            : base("name = SOContext")
         {
-
         }
 
         public virtual DbSet<Cinsiyet> Cinsiyets { get; set; }
@@ -75,6 +78,10 @@ namespace DataAccess.Concrete.EntityFramework
                 .HasMany(e => e.HastaYakins1)
                 .WithOptional(e => e.Hasta1)
                 .HasForeignKey(e => e.yakinID);
+
+            modelBuilder.Entity<HastaHastalik>()
+                .Property(e => e.hastalikTani)
+                .IsUnicode(false);
 
             modelBuilder.Entity<HastaIlacRapor>()
                 .HasMany(e => e.IlacRapors)
