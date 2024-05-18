@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Entities.DTOs.DoktorHastaListeDtos;
+using Entities.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,9 +33,18 @@ namespace Business.Constans
         public static readonly string PersonelListed = "Personel listelendi";
         public static readonly string PersonelDeleted = "Personel silindi";
         public static readonly string PersonelUpdated = "Personel güncellendi";
-        internal static readonly string PersonelNotFound = "Personel bulunamadı";
-        internal static readonly string PersonelFound = "Personel bulundu";
-        internal static readonly string PersonelNameIsNotEmpty = "Personel adı boş olamaz";
-        internal static readonly string HastaAdIsNotEmpty = "Hasta adı boş olamaz";
+        public static readonly string PersonelNotFound = "Personel bulunamadı";
+        public static readonly string PersonelFound = "Personel bulundu";
+        public static readonly string PersonelNameIsNotEmpty = "Personel adı boş olamaz";
+        public static readonly string HastaAdIsNotEmpty = "Hasta adı boş olamaz";
+        public static readonly string KullaniciUpdated = "Kullanıcı güncellendi"; 
+        public static readonly string KullaniciListed = "Kullanıcılar listelendi";
+        public static readonly string KullaniciDeleted = "Kullanıcı silindi";
+        public static readonly string KullaniciAdded = "Kullanıcı eklendi";
+        public static readonly string KullaniciNotFound = "Kullanici bulunamadı";
+        public static readonly string KullaniciIsTooShort = "Kullanıcı adı boş geçilemez";
+        public static readonly string KullaniciPasswordNotNull = "Paralo boş geçilemez";
+        public static readonly string DoktorNotFound = "Doktor Bulunamadı";
+        public static readonly string HastaNotFound = "Hasta bulunamadı";
     }
 }

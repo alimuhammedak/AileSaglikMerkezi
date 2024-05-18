@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="frmSifreSifirlamaElipse.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="frmSifreSifirlamaDragControl.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>169, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dtSfDogumTarih.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="dtSfDogumTarih.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 382</value>
+  </data>
+  <data name="dtSfDogumTarih.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 26</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dtSfDogumTarih.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;dtSfDogumTarih.Name" xml:space="preserve">
+    <value>dtSfDogumTarih</value>
+  </data>
+  <data name="&gt;&gt;dtSfDogumTarih.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DateTimePicker, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;dtSfDogumTarih.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;dtSfDogumTarih.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LblSifreSifirlama.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="LblSifreSifirlama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 99</value>
+  </data>
+  <data name="LblSifreSifirlama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 23</value>
+  </data>
+  <data name="LblSifreSifirlama.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="LblSifreSifirlama.Text" xml:space="preserve">
+    <value>Şifre Sıfırlama Formu</value>
+  </data>
+  <data name="&gt;&gt;LblSifreSifirlama.Name" xml:space="preserve">
+    <value>LblSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;LblSifreSifirlama.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LblSifreSifirlama.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;LblSifreSifirlama.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TxtBxSoyadi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="TxtBxSoyadi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 313</value>
+  </data>
+  <data name="TxtBxSoyadi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 30</value>
+  </data>
+  <data name="TxtBxSoyadi.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;TxtBxSoyadi.Name" xml:space="preserve">
+    <value>TxtBxSoyadi</value>
+  </data>
+  <data name="&gt;&gt;TxtBxSoyadi.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TxtBxSoyadi.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;TxtBxSoyadi.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LbSoyadi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9pt, style=Bold</value>
+  </data>
+  <data name="LbSoyadi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 290</value>
+  </data>
+  <data name="LbSoyadi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 17</value>
+  </data>
+  <data name="LbSoyadi.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="LbSoyadi.Text" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="&gt;&gt;LbSoyadi.Name" xml:space="preserve">
+    <value>LbSoyadi</value>
+  </data>
+  <data name="&gt;&gt;LbSoyadi.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LbSoyadi.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;LbSoyadi.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LblTcNo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9pt, style=Bold</value>
+  </data>
+  <data name="LblTcNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 153</value>
+  </data>
+  <data name="LblTcNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 17</value>
+  </data>
+  <data name="LblTcNo.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="LblTcNo.Text" xml:space="preserve">
+    <value>TC Kimlik Numarası</value>
+  </data>
+  <data name="&gt;&gt;LblTcNo.Name" xml:space="preserve">
+    <value>LblTcNo</value>
+  </data>
+  <data name="&gt;&gt;LblTcNo.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LblTcNo.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;LblTcNo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TxtBxTcNo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="TxtBxTcNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 176</value>
+  </data>
+  <data name="TxtBxTcNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 30</value>
+  </data>
+  <data name="TxtBxTcNo.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;TxtBxTcNo.Name" xml:space="preserve">
+    <value>TxtBxTcNo</value>
+  </data>
+  <data name="&gt;&gt;TxtBxTcNo.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TxtBxTcNo.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;TxtBxTcNo.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnHatirladim.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9pt, style=Bold</value>
+  </data>
+  <data name="btnHatirladim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 440</value>
+  </data>
+  <data name="btnHatirladim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 33</value>
+  </data>
+  <data name="btnHatirladim.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnHatirladim.Text" xml:space="preserve">
+    <value>&lt;- Hatırladım</value>
+  </data>
+  <data name="&gt;&gt;btnHatirladim.Name" xml:space="preserve">
+    <value>btnHatirladim</value>
+  </data>
+  <data name="&gt;&gt;btnHatirladim.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TileButton, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnHatirladim.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;btnHatirladim.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="BtnSifreSifirlama.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9pt, style=Bold</value>
+  </data>
+  <data name="BtnSifreSifirlama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 440</value>
+  </data>
+  <data name="BtnSifreSifirlama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 33</value>
+  </data>
+  <data name="BtnSifreSifirlama.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="BtnSifreSifirlama.Text" xml:space="preserve">
+    <value>Şifre Sıfırla</value>
+  </data>
+  <data name="&gt;&gt;BtnSifreSifirlama.Name" xml:space="preserve">
+    <value>BtnSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;BtnSifreSifirlama.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TileButton, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;BtnSifreSifirlama.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;BtnSifreSifirlama.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="TxtBxAdi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="TxtBxAdi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 245</value>
+  </data>
+  <data name="TxtBxAdi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>439, 30</value>
+  </data>
+  <data name="TxtBxAdi.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdi.Name" xml:space="preserve">
+    <value>TxtBxAdi</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdi.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdi.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdi.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LblDogumTarihi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9pt, style=Bold</value>
+  </data>
+  <data name="LblDogumTarihi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 359</value>
+  </data>
+  <data name="LblDogumTarihi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="LblDogumTarihi.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="LblDogumTarihi.Text" xml:space="preserve">
+    <value>Doğum Tarihi</value>
+  </data>
+  <data name="&gt;&gt;LblDogumTarihi.Name" xml:space="preserve">
+    <value>LblDogumTarihi</value>
+  </data>
+  <data name="&gt;&gt;LblDogumTarihi.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LblDogumTarihi.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;LblDogumTarihi.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LblAdi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 9pt, style=Bold</value>
+  </data>
+  <data name="LblAdi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 222</value>
+  </data>
+  <data name="LblAdi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 17</value>
+  </data>
+  <data name="LblAdi.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="LblAdi.Text" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="&gt;&gt;LblAdi.Name" xml:space="preserve">
+    <value>LblAdi</value>
+  </data>
+  <data name="&gt;&gt;LblAdi.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LblAdi.Parent" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;LblAdi.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PnlSifreSifirlama.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="PnlSifreSifirlama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PnlSifreSifirlama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>709, 560</value>
+  </data>
+  <data name="PnlSifreSifirlama.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PnlSifreSifirlama.Name" xml:space="preserve">
+    <value>PnlSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;PnlSifreSifirlama.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;PnlSifreSifirlama.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlSifreSifirlama.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PnlAciklama.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="PnlAciklama.Location" type="System.Drawing.Point, System.Drawing">
+    <value>715, 0</value>
+  </data>
+  <data name="PnlAciklama.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 560</value>
+  </data>
+  <data name="PnlAciklama.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PnlAciklama.Name" xml:space="preserve">
+    <value>PnlAciklama</value>
+  </data>
+  <data name="&gt;&gt;PnlAciklama.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;PnlAciklama.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlAciklama.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1182, 560</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>frmSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;frmSifreSifirlamaElipse.Name" xml:space="preserve">
+    <value>frmSifreSifirlamaElipse</value>
+  </data>
+  <data name="&gt;&gt;frmSifreSifirlamaElipse.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Elipse, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;frmSifreSifirlamaDragControl.Name" xml:space="preserve">
+    <value>frmSifreSifirlamaDragControl</value>
+  </data>
+  <data name="&gt;&gt;frmSifreSifirlamaDragControl.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DragControl, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

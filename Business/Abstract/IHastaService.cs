@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Core.Utilities.Result;
+using Entities.DTOs.DoktorHastaListeDtos;
 
 namespace Business.Abstract
 {
@@ -15,5 +16,7 @@ namespace Business.Abstract
         IResult Add(Hasta hasta);
         IResult Update(Hasta hasta);
         IResult Delete(Hasta hasta);
+        IDataResult<List<HastaListeDto>> GetAllList();
+        IDataResult<List<HastaListeDto>> GetByIdentityNumber(string identityNumber);
     }
 }

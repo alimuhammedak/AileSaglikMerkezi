@@ -14,7 +14,7 @@ namespace Business.ValidationRules.FluentValidation
         //Her tablo için ayrı class oluşturulur ve bu class AbstractValidator sınıfından türetilir.
         public PersonelValidator()
         {
-            RuleFor(p => p.ad).NotEmpty().WithMessage(Messages.PersonelNameIsNotEmpty); //Buraya alt alta kuralları yazıyoruz.
+            //RuleFor(p => p.).NotEmpty().WithMessage(Messages.PersonelNameIsNotEmpty); //Buraya alt alta kuralları yazıyoruz.
         }
     }
 }

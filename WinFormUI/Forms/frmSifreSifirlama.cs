@@ -1,5 +1,6 @@
-﻿using Business.Concrete;
-using DataAccess.Concrete.EntityFramework;
+﻿using Business.Abstract;
+using Business.DependencyResolvers.Autofac;
+using Entities.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,13 +15,12 @@ namespace WinFormUI.Forms
 {
     public partial class frmSifreSifirlama : Form
     {
+        IKullaniciService _kullaniciService;
+
         public frmSifreSifirlama()
         {
             InitializeComponent();
-        }
-
-        private void TxtBxYeniSfr_TextChanged(object sender, EventArgs e)
-        {
+            _kullaniciService = InstanceFactory.GetInstance<IKullaniciService>();
 
         }
 
@@ -29,9 +29,32 @@ namespace WinFormUI.Forms
             Application.Exit();
         }
 
-        private void btnGeriDon_Click(object sender, EventArgs e)
+        private void BtnSifreSifirlama_Click(object sender, EventArgs e)
         {
-           
+            var result = _kullaniciService.GetByUserPasswordReset(TxtBxTcNo.Text, TxtBxAdi.Text, TxtBxSoyadi.Text);
+            if (result.IsSuccess)
+            {
+                var kullanici = _kullaniciService.GetByIdentityNumber(TxtBxTcNo.Text);
+                var frm = new frmSifreGirme(kullanici.Data);
+                frm.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show(result.Message);
+            }
+        }
+
+        private void btnHatirladim_Click(object sender, EventArgs e)
+        {
+            var frm = new frmGiris();
+            frm.Show();
+            this.Close();
+        }
+
+        private void dtSfDogumTarih_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

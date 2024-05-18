@@ -10,6 +10,7 @@ using Business.ValidationRules.FluentValidation;
 using Core.Aspect.Autofac.Validation;
 using Core.Utilities.Result;
 using DataAccess.Abstract;
+using Entities.DTOs.DoktorHastaListeDtos;
 using Entities.Entity;
 
 namespace Business.Concrete
@@ -55,10 +56,30 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Hasta>>(_hastaDal.GetAll(),Messages.HastaListed);
         }
 
+        public IDataResult<List<HastaListeDto>> GetAllList()
+        {
+            var result = _hastaDal.GetAllHastaListe();
+            if(result is null)
+            {
+                return new ErrorDataResult<List<HastaListeDto>>(Messages.HastaNotFound);
+            }
+            return new SuccessDataResult<List<HastaListeDto>>(result,Messages.HastaListed);
+        }
+
         public IDataResult<Hasta> GetById(int id)
         {
             return new SuccessDataResult<Hasta>(_hastaDal.Get(h => h.hastaID == id));
 
+        }
+
+        public IDataResult<List<HastaListeDto>> GetByIdentityNumber(string identityNumber) //1
+        {
+            var result = _hastaDal.GetAllHastaListe(h => h.identityNumber.Contains(identityNumber));
+            if (result is null)
+            {
+                return new ErrorDataResult<List<HastaListeDto>>(Messages.HastaNotFound);
+            }
+            return new SuccessDataResult<List<HastaListeDto>>(result,Messages.HastaListed);
         }
 
         public IResult Update(Hasta hasta)

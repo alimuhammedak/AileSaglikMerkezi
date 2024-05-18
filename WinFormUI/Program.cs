@@ -1,29 +1,21 @@
-﻿using System;
+﻿using Entities.Entity;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Autofac;
-using Business.Abstract;
-using Business.Concrete;
-using Business.DependencyResolvers.Autofac;
-using DataAccess.Abstract;
-using DataAccess.Concrete.EntityFramework;
-using DataAccess.Concrete.InMemory;
-using Entities.Entity;
-using WinFormUI;
+using WinFormUI.Forms;
 
 namespace WinFormUI
 {
-
-    internal static class Program
+    public static class Program
     {
-        internal static Personel personel { get; set; }
+        public static Kullanici Kullanici { get; set; }
+        public static Doktor Doktor { get; set; }
+        public static Personel Personel { get; set; }
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-
         [STAThread]
         static void Main()
         {
@@ -33,5 +25,3 @@ namespace WinFormUI
         }
     }
 }
-
-

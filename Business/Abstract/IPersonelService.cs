@@ -10,9 +10,10 @@ namespace Business.Abstract
 {
     public interface IPersonelService
     {
+        
         IDataResult<List<Personel>> GetAll();
         IDataResult<Personel> GetById(int id);
-        IDataResult<Personel> GetByUserNameAndPassword(string userName, string password);
+        IDataResult<Personel> GetByKullaniciId(int id);
         IResult Add(Personel personel);
         IResult Update(Personel personel);
         IResult Delete(Personel personel);

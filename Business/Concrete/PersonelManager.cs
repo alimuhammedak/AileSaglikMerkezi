@@ -43,14 +43,14 @@ namespace Business.Concrete
             return new SuccessDataResult<Personel>(_personelDal.Get(p => p.personelID == id), Messages.PersonelListed);
         }
 
-        public IDataResult<Personel> GetByUserNameAndPassword(string userName, string password)
+        public IDataResult<Personel> GetByKullaniciId(int id)
         {
-            var result = _personelDal.Get(p => p.kullaniciAd == userName && p.passwordSalt == password);
+            var result = _personelDal.Get(p => p.kullaniciID == id);
             if (result == null)
             {
                 return new ErrorDataResult<Personel>(Messages.PersonelNotFound);
             }
-            return new SuccessDataResult<Personel>(result,Messages.PersonelFound);
+            return new SuccessDataResult<Personel>(result, Messages.PersonelListed);
         }
 
         public IResult Update(Personel personel)
