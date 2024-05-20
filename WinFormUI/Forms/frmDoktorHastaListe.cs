@@ -29,11 +29,15 @@ namespace WinFormUI.Forms
     {
         private readonly IHastaKayitService _hastaKayitService;
         private readonly IHastaService _hastaService;
+        private readonly IResimYolService _resimYolService;
+
         public frmDoktorHastaListe()
         {
             InitializeComponent();
             _hastaKayitService = InstanceFactory.GetInstance<IHastaKayitService>();
             _hastaService = InstanceFactory.GetInstance<IHastaService>();
+            _resimYolService = InstanceFactory.GetInstance<IResimYolService>();
+
         }
         private void frmHastaKayit_Load(object sender, EventArgs e)
         {
@@ -97,7 +101,10 @@ namespace WinFormUI.Forms
         }
         private void HastaGoster(HastaListeDto hasta)
         {
+            var resimYol = _resimYolService.GetByHastaID(hasta.hastaID).Data;
 
+            PctrBoxHasta.Image = Image.FromFile($"C:\\silinecekProjeler\\AileSaglikVize\\AileSaglikMerkezi\\WinFormUI\\Images\\{resimYol.yol}.jpg");
+            PctrBoxHasta.SizeMode = PictureBoxSizeMode.StretchImage;
             lblHastaAdSoyad.Text = hasta.ad + " " + hasta.soyad;
             lblIdentityNumber.Text = hasta.identityNumber;
             lblDogumTarih.Text = hasta.dogumTarih?.ToString("dd/MM/yyyy");

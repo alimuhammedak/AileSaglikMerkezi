@@ -22,10 +22,6 @@ namespace Entities.Entity
         public int? diaNabizAlt { get; set; }
 
         public double? bmi { get; set; }
-
-        [StringLength(50)]
-        public string sikayet { get; set; }
-
         public virtual HastaKayit HastaKayit { get; set; }
     }
 }

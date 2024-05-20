@@ -12,6 +12,7 @@ namespace Business.Abstract
     {
         IDataResult<List<Tetkik>> GetAll();
         IDataResult<Tetkik> GetById(int id);
+        IDataResult<Tetkik> GetByName(string name);
         IResult Add(Tetkik Tetkik);
         IResult Update(Tetkik Tetkik);
         IResult Delete(Tetkik Tetkik);

@@ -12,6 +12,7 @@ namespace Business.Abstract
     {
         IDataResult<List<Ilac>> GetAll();
         IDataResult<Ilac> GetById(int id);
+        IDataResult<Ilac> GetByName(string name);
         IResult Add(Ilac ilac);
         IResult Update(Ilac ilac);
         IResult Delete(Ilac ilac);

@@ -49,6 +49,16 @@ namespace Business.Concrete
             return new SuccessDataResult<Tetkik>(result, Messages.TetkikFound);
         }
 
+        public IDataResult<Tetkik> GetByName(string name)
+        {
+            var result = _tetkikDal.Get(t => t.ad == name);
+            if (result is null)
+            {
+                return new ErrorDataResult<Tetkik>(Messages.TetkikNotFound);
+            }
+            return new SuccessDataResult<Tetkik>(result, Messages.TetkikFound);
+        }
+
         public IResult Update(Tetkik tetkik)
         {
             _tetkikDal.Update(tetkik);

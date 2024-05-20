@@ -15,5 +15,6 @@ namespace Business.Abstract
         IResult Add(Recete Recete);
         IResult Update(Recete Recete);
         IResult Delete(Recete Recete);
+        IDataResult<Recete> GetByReceteNo(string receteNo);
     }
 }

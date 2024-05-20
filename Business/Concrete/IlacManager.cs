@@ -43,6 +43,16 @@ namespace Business.Concrete
             return new SuccessDataResult<Ilac>(data, Messages.IlacListed);
         }
 
+        public IDataResult<Ilac> GetByName(string name)
+        {
+            var result = _ilacDal.Get(i => i.ad == name);
+            if (result == null)
+            {
+                return new ErrorDataResult<Ilac>(Messages.IlacNotFound);
+            }
+            return new SuccessDataResult<Ilac>(result, Messages.IlacListed);
+        }
+
         public IResult Update(Ilac ilac)
         {
             _ilacDal.Update(ilac);

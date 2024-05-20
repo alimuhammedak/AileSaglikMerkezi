@@ -12,6 +12,7 @@ namespace Business.Abstract
     {
         IDataResult<List<Hastalik>> GetAll();
         IDataResult<Hastalik> GetById(int id);
+        IDataResult<Hastalik> GetByName(string name);
         IResult Add(Hastalik Hastalik);
         IResult Update(Hastalik Hastalik);
         IResult Delete(Hastalik Hastalik);

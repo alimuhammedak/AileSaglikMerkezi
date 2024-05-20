@@ -62,5 +62,34 @@ namespace Business.Constans
         public static readonly string TetkikFound = "Tetkik bulundu";
         public static readonly string TetkikUpdated = "Tetkik güncellendi";
         public static readonly string ResimYolNotFound = "Resim yolu bulunamadı";
+        public static readonly string ReceteAdded = "Reçete başarıyla eklendi.";
+        public static readonly string ReceteAddFailed = "Reçete eklenirken bir hata oluştu.";
+        public static readonly string ReceteDeleted = "Reçete başarıyla silindi.";
+        public static readonly string ReceteDeleteFailed = "Reçete silinirken bir hata oluştu.";
+        public static readonly string ReceteUpdated = "Reçete başarıyla güncellendi.";
+        public static readonly string ReceteUpdateFailed = "Reçete güncellenirken bir hata oluştu.";
+        public static readonly string ReceteNotFound = "Reçete bulunamadı.";
+        public static readonly string ReceteGetAllFailed = "Reçeteler getirilirken bir hata oluştu.";
+        public static readonly string ReceteGetByIdFailed = "Reçete getirilirken bir hata oluştu.";
+        public static readonly string IlacNotFound = "İlaç bulunamadı";
+        public static readonly string ReceteIlacAdded = "Reçete ilaç başarıyla eklendi.";
+        public static readonly string ReceteIlacDeleted = "Reçete ilaç başarıyla silindi.";
+        public static readonly string ReceteIlacListed = "Reçete ilaçlar başarıyla listelendi.";
+        public static readonly string ReceteIlacNotFound = "Reçete ilaç bulunamadı.";
+        public static readonly string ReceteIlacFound = "Reçete ilaç başarıyla bulundu.";
+        public static readonly string ReceteIlacUpdated = "Reçete ilaç başarıyla güncellendi.";
+        public static readonly string HastaHastalikAdded = "Hasta hastalık başarıyla eklendi.";
+        public static readonly string HastaHastalikDeleted = "Hasta hastalık başarıyla silindi.";
+        public static readonly string HastaHastalikListed = "Hasta hastalıklar başarıyla listelendi.";
+        public static readonly string HastaHastalikNotFound = "Hasta hastalık bulunamadı.";
+        public static readonly string HastaHastalikFound = "Hasta hastalık başarıyla bulundu.";
+        public static readonly string HastaHastalikUpdated = "Hasta hastalık başarıyla güncellendi.";
+        public static readonly string TahlilAdded = "Tahlil başarıyla eklendi.";
+        public static readonly string TahlilDeleted = "Tahlil başarıyla silindi.";
+        public static readonly string TahlilUpdated = "Tahlil başarıyla güncellendi.";
+        public static readonly string TahlilListed = "Tahliller listelendi.";
+        public static readonly string TahlilFound = "Tahlil bulundu.";
+        public static readonly string TahlilNotFound = "Tahlil bulunamadı.";
+
     }
 }

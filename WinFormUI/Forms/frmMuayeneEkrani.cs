@@ -26,15 +26,19 @@ namespace WinFormUI.Forms
         private readonly IHastaService _hastaService;
         private readonly IIlacService _ilacService;
         private readonly ITetkikService _tetkikService;
+        private readonly ITahlilService _tahlilService;
         private readonly IHastalikService _hastalikService;
         private readonly IResimYolService _resimYolService;
+        private readonly IReceteService _receteService;
+        private readonly IReceteIlacService _receteIlacService;
+        private readonly IHastaHastalikService _hastaHastalikService;
         private HastaCagirmaDto _hasta;
         private List<string> tetkikList;
         private List<string> taniList;
         private List<string> ilacList;
         private List<string> selectedMedicines;
         private List<string> selectedDiagnosis;
-        
+
 
         public frmMuayeneEkrani()
         {
@@ -44,9 +48,12 @@ namespace WinFormUI.Forms
             _ilacService = InstanceFactory.GetInstance<IIlacService>();
             _hastalikService = InstanceFactory.GetInstance<IHastalikService>();
             _tetkikService = InstanceFactory.GetInstance<ITetkikService>();
+            _tahlilService = InstanceFactory.GetInstance<ITahlilService>();
             _resimYolService = InstanceFactory.GetInstance<IResimYolService>();
             _hastaService = InstanceFactory.GetInstance<IHastaService>();
-
+            _receteService = InstanceFactory.GetInstance<IReceteService>();
+            _receteIlacService = InstanceFactory.GetInstance<IReceteIlacService>();
+            _hastaHastalikService = InstanceFactory.GetInstance<IHastaHastalikService>();
 
             selectedMedicines = new List<string>();
             selectedDiagnosis = new List<string>();
@@ -66,7 +73,7 @@ namespace WinFormUI.Forms
             TaniAutoCompleteCollection.AddRange(taniList.ToArray());
             cmbHastalikList.AutoCompleteCustomSource = TaniAutoCompleteCollection;
             #endregion
-            ComboBoxAddData();            
+            ComboBoxAddData();
         }
 
         private void ComboBoxAddData()
@@ -82,6 +89,8 @@ namespace WinFormUI.Forms
             taniList = _hastalikService.GetAll().Data.Select(hastalik => hastalik.ad).ToList();
             tetkikList = _tetkikService.GetAll().Data.Select(tetkik => tetkik.ad).ToList();
             _hasta = _hastaKayitService.GetAllHastaCagirmaByDoktorIDToDay(Program.Doktor.doktorID).Data.First();
+            Program.HastaKayit = _hastaKayitService.GetById(_hasta.HastaKayitID.Value).Data;
+
         }
 
         private void MuayeneLabelLoad()
@@ -184,5 +193,147 @@ namespace WinFormUI.Forms
             frmAnaSayfa.Show();
             this.Hide();
         }
+
+        private void pbSave_Click(object sender, EventArgs e)
+        {
+            SaveRecete();
+            SaveDiagnosis();
+            SaveTetkikler();
+            SaveSikayet();
+            MessageBox.Show("Tanılar başarıyla kaydedildi.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            var frm = new frmDoktorAnasayfa();
+            frm.Show();
+            this.Close();
+        }
+
+        private void SaveSikayet()
+        {
+            Program.HastaKayit.sikayet = TxtBxHastaSikayeti.Text;
+            var result = _hastaKayitService.Update(Program.HastaKayit);
+        }
+
+        private void SaveTetkikler()
+        {
+            try
+            {
+                var hastaKayitID = _hasta.HastaKayitID.Value;
+                var birimID = new Random().Next(1, 20);
+
+                foreach (var selectedItem in cbTetkikList.CheckedItems)
+                {
+                    var tetkik = _tetkikService.GetByName(selectedItem.ToString()).Data;
+
+                    Tahlil tahlil = new Tahlil
+                    {
+                        hastaKayitID = hastaKayitID,
+                        tetkikID = tetkik.tetkikID,
+                        istekTarih = DateTime.Now,
+                        kabulTarih = DateTime.Now,
+                        onayTarih = DateTime.Now,
+                        sonuc = 0, // Başlangıç değeri olarak 0 giriyoruz
+                        referansDeger = 0, // Başlangıç değeri olarak 0 giriyoruz
+                        birimID = birimID
+                    };
+
+                    var result = _tahlilService.Add(tahlil);
+                    if (!result.IsSuccess)
+                    {
+                        MessageBox.Show(result.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Tetkikler kaydedilirken bir hata oluştu: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void SaveRecete()
+        {
+            try
+            {
+                #region Reçete oluştur
+                var receteNo = ReceteNumarasiOlustur();
+                Recete createdRecete = new Recete
+                {
+                    receteNo = receteNo
+                };
+                // Recete tablosuna ekle
+                _receteService.Add(createdRecete);
+                #endregion
+
+                #region Recete ilaç tablosuna ilaçları ekle
+                var recete = _receteService.GetByReceteNo(receteNo).Data;
+
+                foreach (var selectedMedicine in selectedMedicines)
+                {
+                    // İlaç adından ilaç ID'sini bulma
+                    var ilac = _ilacService.GetByName(selectedMedicine).Data;
+                    if (ilac != null)
+                    {
+                        ReceteIlac receteIlac = new ReceteIlac
+                        {
+                            ilacID = ilac.ilacID,
+                            receteID = recete.receteID,
+                            adet = 1, // Bu değeri ihtiyacınıza göre ayarlayın
+                            notAciklama = "", // Bu değeri ihtiyacınıza göre ayarlayın
+                            kullanimTalimati = "" // Bu değeri ihtiyacınıza göre ayarlayın
+                        };
+                        _receteIlacService.Add(receteIlac);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"İlaç bulunamadı: {selectedMedicine}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                #endregion
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Kayıt sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void SaveDiagnosis()
+        {
+            try
+            {
+                var hasta = _hastaService.GetByIdentityNumber(LblTcNo.Text).Data;
+
+                foreach (var selectedDiagnosis in lstselectedDiagnosis.Items)
+                {
+                    var hastalik = _hastalikService.GetByName(selectedDiagnosis.ToString()).Data;
+
+                    HastaHastalik hastaHastalik = new HastaHastalik
+                    {
+                        hastalikID = hastalik.hastalikID,
+                        hastaID = hasta.hastaID,
+                        taniTarih = DateTime.Now,
+                        aktifMi = true
+                    };
+
+                    var result = _hastaHastalikService.Add(hastaHastalik);
+                    if (!result.IsSuccess)
+                    {
+                        MessageBox.Show(result.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Tanılar kaydedilirken bir hata oluştu: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public static string ReceteNumarasiOlustur()
+        {
+            // Yeni bir GUID oluşturur ve ilk 8 karakterini alır
+            return Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
+        }
+
+
     }
 }

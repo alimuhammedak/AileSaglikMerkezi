@@ -50,6 +50,16 @@ namespace Business.Concrete
             return new SuccessDataResult<Hastalik>(result, Messages.HastalikFound);
         }
 
+        public IDataResult<Hastalik> GetByName(string name)
+        {
+            var result = _hastalikDal.Get(h => h.ad == name);
+            if (result is null)
+            {
+                return new ErrorDataResult<Hastalik>(Messages.HastalikNotFound);
+            }
+            return new SuccessDataResult<Hastalik>(result, Messages.HastalikFound);
+        }
+
         public IResult Update(Hastalik hastalik)
         {
             _hastalikDal.Update(hastalik);

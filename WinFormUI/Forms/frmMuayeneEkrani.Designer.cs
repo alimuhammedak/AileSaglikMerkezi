@@ -39,7 +39,6 @@ namespace WinFormUI.Forms
             this.LblHastaCinsiyet = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblIletisimNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblHastaAdi = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.PctrBoxHasta = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PnlSikayetEkleme = new Guna.UI2.WinForms.Guna2Panel();
             this.TxtBxHastaSikayeti = new Guna.UI2.WinForms.Guna2TextBox();
             this.LblSikayetEkleme = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -48,8 +47,6 @@ namespace WinFormUI.Forms
             this.cmbIlacList = new System.Windows.Forms.ComboBox();
             this.LblRecete = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PnlUstBilgi = new Guna.UI2.WinForms.Guna2Panel();
-            this.PctrBxCReturn = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.LblMuayeneTarihi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblMuayene = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblProtokolNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -64,16 +61,21 @@ namespace WinFormUI.Forms
             this.LblHastalik = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.LblHastaIslemleri = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pbSave = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PctrBxCReturn = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PctrBoxHasta = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PnlHastaBilgi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBoxHasta)).BeginInit();
             this.PnlSikayetEkleme.SuspendLayout();
             this.PnlRecete.SuspendLayout();
             this.PnlUstBilgi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxCReturn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
             this.PnlTetkikler.SuspendLayout();
             this.PnlTani.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxCReturn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBoxHasta)).BeginInit();
             this.SuspendLayout();
             // 
             // frmMuayeneEkraniDragControl
@@ -98,7 +100,7 @@ namespace WinFormUI.Forms
             // 
             this.LblTcNo.BackColor = System.Drawing.Color.Transparent;
             this.LblTcNo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTcNo.Location = new System.Drawing.Point(31, 223);
+            this.LblTcNo.Location = new System.Drawing.Point(31, 200);
             this.LblTcNo.Name = "LblTcNo";
             this.LblTcNo.Size = new System.Drawing.Size(12, 17);
             this.LblTcNo.TabIndex = 57;
@@ -108,7 +110,7 @@ namespace WinFormUI.Forms
             // 
             this.LblHastaDogumTarihi.BackColor = System.Drawing.Color.Transparent;
             this.LblHastaDogumTarihi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblHastaDogumTarihi.Location = new System.Drawing.Point(31, 246);
+            this.LblHastaDogumTarihi.Location = new System.Drawing.Point(31, 223);
             this.LblHastaDogumTarihi.Name = "LblHastaDogumTarihi";
             this.LblHastaDogumTarihi.Size = new System.Drawing.Size(12, 17);
             this.LblHastaDogumTarihi.TabIndex = 55;
@@ -128,7 +130,7 @@ namespace WinFormUI.Forms
             // 
             this.LblIletisimNo.BackColor = System.Drawing.Color.Transparent;
             this.LblIletisimNo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblIletisimNo.Location = new System.Drawing.Point(31, 200);
+            this.LblIletisimNo.Location = new System.Drawing.Point(31, 246);
             this.LblIletisimNo.Name = "LblIletisimNo";
             this.LblIletisimNo.Size = new System.Drawing.Size(12, 17);
             this.LblIletisimNo.TabIndex = 53;
@@ -143,15 +145,6 @@ namespace WinFormUI.Forms
             this.LblHastaAdi.Size = new System.Drawing.Size(12, 17);
             this.LblHastaAdi.TabIndex = 52;
             this.LblHastaAdi.Text = "...";
-            // 
-            // PctrBoxHasta
-            // 
-            this.PctrBoxHasta.ImageRotate = 0F;
-            this.PctrBoxHasta.Location = new System.Drawing.Point(31, 24);
-            this.PctrBoxHasta.Name = "PctrBoxHasta";
-            this.PctrBoxHasta.Size = new System.Drawing.Size(125, 140);
-            this.PctrBoxHasta.TabIndex = 51;
-            this.PctrBoxHasta.TabStop = false;
             // 
             // PnlSikayetEkleme
             // 
@@ -248,30 +241,6 @@ namespace WinFormUI.Forms
             this.PnlUstBilgi.Name = "PnlUstBilgi";
             this.PnlUstBilgi.Size = new System.Drawing.Size(939, 41);
             this.PnlUstBilgi.TabIndex = 45;
-            // 
-            // PctrBxCReturn
-            // 
-            this.PctrBxCReturn.Image = global::WinFormUI.Properties.Resources._return;
-            this.PctrBxCReturn.ImageRotate = 0F;
-            this.PctrBxCReturn.Location = new System.Drawing.Point(878, 3);
-            this.PctrBxCReturn.Name = "PctrBxCReturn";
-            this.PctrBxCReturn.Size = new System.Drawing.Size(25, 25);
-            this.PctrBxCReturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctrBxCReturn.TabIndex = 49;
-            this.PctrBxCReturn.TabStop = false;
-            this.PctrBxCReturn.Click += new System.EventHandler(this.PctrBxCReturn_Click);
-            // 
-            // PctrBxClose
-            // 
-            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.multiply;
-            this.PctrBxClose.ImageRotate = 0F;
-            this.PctrBxClose.Location = new System.Drawing.Point(911, 4);
-            this.PctrBxClose.Name = "PctrBxClose";
-            this.PctrBxClose.Size = new System.Drawing.Size(25, 25);
-            this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctrBxClose.TabIndex = 24;
-            this.PctrBxClose.TabStop = false;
-            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
             // 
             // LblMuayeneTarihi
             // 
@@ -408,6 +377,7 @@ namespace WinFormUI.Forms
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.pbSave);
             this.guna2Panel1.Controls.Add(this.LblHastaIslemleri);
             this.guna2Panel1.Location = new System.Drawing.Point(900, 329);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -423,6 +393,51 @@ namespace WinFormUI.Forms
             this.LblHastaIslemleri.Size = new System.Drawing.Size(121, 19);
             this.LblHastaIslemleri.TabIndex = 23;
             this.LblHastaIslemleri.Text = "Hızlı Hasta İşlemleri";
+            // 
+            // pbSave
+            // 
+            this.pbSave.Image = global::WinFormUI.Properties.Resources.save;
+            this.pbSave.ImageRotate = 0F;
+            this.pbSave.Location = new System.Drawing.Point(25, 35);
+            this.pbSave.Name = "pbSave";
+            this.pbSave.Size = new System.Drawing.Size(64, 65);
+            this.pbSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbSave.TabIndex = 24;
+            this.pbSave.TabStop = false;
+            this.pbSave.Click += new System.EventHandler(this.pbSave_Click);
+            // 
+            // PctrBxCReturn
+            // 
+            this.PctrBxCReturn.Image = global::WinFormUI.Properties.Resources._return;
+            this.PctrBxCReturn.ImageRotate = 0F;
+            this.PctrBxCReturn.Location = new System.Drawing.Point(878, 3);
+            this.PctrBxCReturn.Name = "PctrBxCReturn";
+            this.PctrBxCReturn.Size = new System.Drawing.Size(25, 25);
+            this.PctrBxCReturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctrBxCReturn.TabIndex = 49;
+            this.PctrBxCReturn.TabStop = false;
+            this.PctrBxCReturn.Click += new System.EventHandler(this.PctrBxCReturn_Click);
+            // 
+            // PctrBxClose
+            // 
+            this.PctrBxClose.Image = global::WinFormUI.Properties.Resources.multiply;
+            this.PctrBxClose.ImageRotate = 0F;
+            this.PctrBxClose.Location = new System.Drawing.Point(911, 4);
+            this.PctrBxClose.Name = "PctrBxClose";
+            this.PctrBxClose.Size = new System.Drawing.Size(25, 25);
+            this.PctrBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PctrBxClose.TabIndex = 24;
+            this.PctrBxClose.TabStop = false;
+            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
+            // 
+            // PctrBoxHasta
+            // 
+            this.PctrBoxHasta.ImageRotate = 0F;
+            this.PctrBoxHasta.Location = new System.Drawing.Point(31, 24);
+            this.PctrBoxHasta.Name = "PctrBoxHasta";
+            this.PctrBoxHasta.Size = new System.Drawing.Size(125, 140);
+            this.PctrBoxHasta.TabIndex = 51;
+            this.PctrBoxHasta.TabStop = false;
             // 
             // frmMuayeneEkrani
             // 
@@ -443,21 +458,22 @@ namespace WinFormUI.Forms
             this.Load += new System.EventHandler(this.frmMuayeneEkrani_Load);
             this.PnlHastaBilgi.ResumeLayout(false);
             this.PnlHastaBilgi.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBoxHasta)).EndInit();
             this.PnlSikayetEkleme.ResumeLayout(false);
             this.PnlSikayetEkleme.PerformLayout();
             this.PnlRecete.ResumeLayout(false);
             this.PnlRecete.PerformLayout();
             this.PnlUstBilgi.ResumeLayout(false);
             this.PnlUstBilgi.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxCReturn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
             this.PnlTetkikler.ResumeLayout(false);
             this.PnlTetkikler.PerformLayout();
             this.PnlTani.ResumeLayout(false);
             this.PnlTani.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxCReturn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBoxHasta)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -497,5 +513,6 @@ namespace WinFormUI.Forms
         private System.Windows.Forms.ComboBox cmbIlacList;
         private System.Windows.Forms.ListBox lstSelectedMedicines;
         private ListBox lstselectedDiagnosis;
+        private Guna.UI2.WinForms.Guna2PictureBox pbSave;
     }
 }

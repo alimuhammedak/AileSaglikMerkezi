@@ -18,7 +18,7 @@ namespace Entities.Entity
 
         public int receteID { get; set; }
 
-        [StringLength(15)]
+        [StringLength(100)]
         public string receteNo { get; set; }
 
         [Column(TypeName = "smalldatetime")]

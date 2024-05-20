@@ -259,6 +259,7 @@
     <Content Include="Images\hasta1.jpg" />
     <Content Include="Images\hasta2.jpg" />
     <Content Include="Images\personel1.jpg" />
+    <None Include="Resources\save.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

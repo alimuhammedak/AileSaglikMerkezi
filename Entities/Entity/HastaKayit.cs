@@ -40,6 +40,7 @@ namespace Entities.Entity
         public DateTime? taburcuTarih { get; set; }
 
         public int? hastaSira { get; set; }
+        public string sikayet { get; set; }
 
         public bool? aktifMi { get; set; }
 

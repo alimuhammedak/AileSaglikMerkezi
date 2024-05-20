@@ -62,10 +62,21 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<ResimYolManager>().As<IResimYolService>().SingleInstance();
             builder.RegisterType<EfResimYolDal>().As<IResimYolDal>().SingleInstance();
 
-            //// HastaHastalik
-            //builder.RegisterType<HastaHastalikManager>().As<IHastaHastalikService>().SingleInstance();
-            //builder.RegisterType<EfHastaHastalikDal>().As<IHastaHastalikDal>().SingleInstance();
+            // Recete
+            builder.RegisterType<ReceteManager>().As<IReceteService>().SingleInstance();
+            builder.RegisterType<EfReceteDal>().As<IReceteDal>().SingleInstance();
 
+            // HastaHastalik
+            builder.RegisterType<HastaHastalikManager>().As<IHastaHastalikService>().SingleInstance();
+            builder.RegisterType<EfHastaHastalikDal>().As<IHastaHastalikDal>().SingleInstance();
+
+            // Tahlil
+            builder.RegisterType<TahlilManager>().As<ITahlilService>().SingleInstance();
+            builder.RegisterType<EfTahlilDal>().As<ITahlilDal>().SingleInstance();
+
+            // ReceteIlac
+            builder.RegisterType<ReceteIlacManager>().As<IReceteIlacService>().SingleInstance();
+            builder.RegisterType<EfReceteIlacDal>().As<IReceteIlacDal>().SingleInstance();
 
             //// HastaDetay
             //builder.RegisterType<HastaDetayManager>().As<IHastaDetayService>().SingleInstance();
@@ -128,13 +139,8 @@ namespace Business.DependencyResolvers.Autofac
             //builder.RegisterType<RaporManager>().As<IRaporService>().SingleInstance();
             //builder.RegisterType<EfRaporDal>().As<IRaporDal>().SingleInstance();
 
-            //// Recete
-            //builder.RegisterType<ReceteManager>().As<IReceteService>().SingleInstance();
-            //builder.RegisterType<EfReceteDal>().As<IReceteDal>().SingleInstance();
 
-            //// ReceteIlac
-            //builder.RegisterType<ReceteIlacManager>().As<IReceteIlacService>().SingleInstance();
-            //builder.RegisterType<EfReceteIlacDal>().As<IReceteIlacDal>().SingleInstance();
+
 
             //// ReceteTur
             //builder.RegisterType<ReceteTurManager>().As<IReceteTurService>().SingleInstance();
@@ -148,9 +154,6 @@ namespace Business.DependencyResolvers.Autofac
             //builder.RegisterType<SikayetTurManager>().As<ISikayetTurService>().SingleInstance();
             //builder.RegisterType<EfSikayetTurDal>().As<ISikayetTurDal>().SingleInstance();
 
-            //// Tahlil
-            //builder.RegisterType<TahlilManager>().As<ITahlilService>().SingleInstance();
-            //builder.RegisterType<EfTahlilDal>().As<ITahlilDal>().SingleInstance();
 
             //// TahlilBirim
             //builder.RegisterType<TahlilBirimManager>().As<ITahlilBirimService>().SingleInstance();
