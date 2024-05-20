@@ -1,6 +1,6 @@
 ﻿namespace WinFormUI.Forms
 {
-    partial class frmHastaKayit
+    partial class frmHastaDoktorEkle
     {
         /// <summary>
         /// Required designer variable.
@@ -401,7 +401,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmHastaKayit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmHastaKayit";
+            this.Text = "frmHastaDoktorKayit";
             this.Load += new System.EventHandler(this.frmHastaKayit_Load);
             this.PnlHastaBilgisi.ResumeLayout(false);
             this.PnlHastaBilgisi.PerformLayout();

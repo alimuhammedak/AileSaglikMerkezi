@@ -1,4 +1,6 @@
-﻿namespace WinFormUI.Forms
+﻿using System.Windows.Forms;
+
+namespace WinFormUI.Forms
 {
     partial class frmSifreSifirlama
     {
@@ -73,18 +75,18 @@
             // 
             this.dtSfDogumTarih.BackColor = System.Drawing.Color.White;
             this.dtSfDogumTarih.Checked = true;
+            this.dtSfDogumTarih.CustomFormat = "yyyy-MM-dd";
             this.dtSfDogumTarih.FillColor = System.Drawing.Color.White;
             this.dtSfDogumTarih.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtSfDogumTarih.ForeColor = System.Drawing.Color.Black;
-            this.dtSfDogumTarih.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtSfDogumTarih.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtSfDogumTarih.Location = new System.Drawing.Point(132, 382);
             this.dtSfDogumTarih.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtSfDogumTarih.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtSfDogumTarih.Name = "dtSfDogumTarih";
             this.dtSfDogumTarih.Size = new System.Drawing.Size(439, 26);
             this.dtSfDogumTarih.TabIndex = 5;
-            this.dtSfDogumTarih.Value = new System.DateTime(2024, 5, 18, 0, 0, 0, 0);
-            this.dtSfDogumTarih.ValueChanged += new System.EventHandler(this.dtSfDogumTarih_ValueChanged);
+            this.dtSfDogumTarih.Value = new System.DateTime(1982, 2, 1, 0, 0, 0, 0);
             // 
             // LblSifreSifirlama
             // 
@@ -100,7 +102,7 @@
             // 
             this.TxtBxSoyadi.BorderRadius = 5;
             this.TxtBxSoyadi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxSoyadi.DefaultText = "";
+            this.TxtBxSoyadi.DefaultText = "Öztürk";
             this.TxtBxSoyadi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TxtBxSoyadi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TxtBxSoyadi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -140,7 +142,7 @@
             // 
             this.TxtBxTcNo.BorderRadius = 5;
             this.TxtBxTcNo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxTcNo.DefaultText = "";
+            this.TxtBxTcNo.DefaultText = "29119978663";
             this.TxtBxTcNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TxtBxTcNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TxtBxTcNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -200,7 +202,7 @@
             // 
             this.TxtBxAdi.BorderRadius = 5;
             this.TxtBxAdi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxAdi.DefaultText = "";
+            this.TxtBxAdi.DefaultText = "Fatma";
             this.TxtBxAdi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TxtBxAdi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TxtBxAdi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

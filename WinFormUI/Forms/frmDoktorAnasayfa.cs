@@ -25,7 +25,7 @@ namespace WinFormUI
 
         private void PctrBxHastaKayit_Click(object sender, EventArgs e)
         {
-            frmHastaKayit frmHastaKayit = new frmHastaKayit();
+            frmHastaDoktorEkle frmHastaKayit = new frmHastaDoktorEkle();
             frmHastaKayit.Show();
             this.Close();
         }

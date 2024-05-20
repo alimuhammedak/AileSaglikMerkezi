@@ -72,9 +72,9 @@ namespace Business.Concrete
 
         }
 
-        public IDataResult<List<HastaListeDto>> GetByIdentityNumber(string identityNumber) //1
+        public IDataResult<List<HastaListeDto>> GetListByIdentityNumber(string identityNumber)
         {
-            var result = _hastaDal.GetAllHastaListe(h => h.identityNumber.Contains(identityNumber));
+            var result = _hastaDal.GetAllHastaListe(h => h.identityNumber.StartsWith(identityNumber));
             if (result is null)
             {
                 return new ErrorDataResult<List<HastaListeDto>>(Messages.HastaNotFound);
@@ -86,6 +86,16 @@ namespace Business.Concrete
         {
             _hastaDal.Update(hasta);
             return new SuccessResult(Messages.HastaUpdated);
+        }
+
+        IDataResult<Hasta> IHastaService.GetByIdentityNumber(string identityNumber)
+        {
+            var result = _hastaDal.Get(h => h.identityNumber == identityNumber);
+            if (result is null)
+            {
+                return new ErrorDataResult<Hasta>(Messages.HastaNotFound);
+            }
+            return new SuccessDataResult<Hasta>(result, Messages.HastaListed);
         }
     }
 }

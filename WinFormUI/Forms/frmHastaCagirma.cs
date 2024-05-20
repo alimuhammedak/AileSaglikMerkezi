@@ -29,7 +29,7 @@ namespace WinFormUI.Forms
 
         private void frmHastaCagirma_Load(object sender, EventArgs e)
         {
-            var result = _hastaKayitService.GetAllHastaCagirmaByDoktorID(Program.Doktor.doktorID);
+            var result = _hastaKayitService.GetAllHastaCagirmaByDoktorIDToDay(Program.Doktor.doktorID);
 
             #region Mapper Config
             var mapperConfiguration = new AutoMapperConfiguration();
@@ -38,11 +38,12 @@ namespace WinFormUI.Forms
             #endregion
 
             DataGwHastaSirasi.DataSource = resultHasta;
+            DataGwHastaSirasi.Columns["HastaKayitID"].Visible = false;
 
             lblDoktor.Text = result.Data.Select(h => h.DoktorUnvan + " DR. " + h.DoktorAdi).FirstOrDefault();
             LblHastaAdi.Text = result.Data.Select(h => h.HastaAd + " " + h.HastaSoyad).FirstOrDefault();
             LblRandevuSaati.Text = result.Data.Select(h => h.HastaSira.Value.ToString()).FirstOrDefault();
-            LblTarih.Text = DateTime.Now.ToShortDateString();
+            LblTarih.Text = DateTime.Now.ToString("yyyy-MM-dd");
         }
 
         private void PctrBxClose_Click(object sender, EventArgs e)

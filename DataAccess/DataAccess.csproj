@@ -74,6 +74,7 @@
     <Compile Include="Abstract\IReceteDal.cs" />
     <Compile Include="Abstract\IReceteIlacDal.cs" />
     <Compile Include="Abstract\IReceteTurDal.cs" />
+    <Compile Include="Abstract\IResimYolDal.cs" />
     <Compile Include="Abstract\ISikayetDal.cs" />
     <Compile Include="Abstract\ISikayetTurDal.cs" />
     <Compile Include="Abstract\ITahlilBirimDal.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Abstract\ITahlilTurDal.cs" />
     <Compile Include="Abstract\ITedarikciDal.cs" />
     <Compile Include="Abstract\ITetkikDal.cs" />
+    <Compile Include="Concrete\EfResimYolDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfCinsiyetDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfDoktorDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfHastaDal.cs" />

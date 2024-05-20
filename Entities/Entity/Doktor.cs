@@ -12,8 +12,8 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Doktor()
         {
-            HastaIlacRapor = new HashSet<HastaIlacRapor>();
-            HastaKayit = new HashSet<HastaKayit>();
+            HastaIlacRapors = new HashSet<HastaIlacRapor>();
+            HastaKayits = new HashSet<HastaKayit>();
         }
 
         public int doktorID { get; set; }
@@ -38,9 +38,9 @@ namespace Entities.Entity
         public virtual Unvan Unvan { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaIlacRapor> HastaIlacRapor { get; set; }
+        public virtual ICollection<HastaIlacRapor> HastaIlacRapors { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaKayit> HastaKayit { get; set; }
+        public virtual ICollection<HastaKayit> HastaKayits { get; set; }
     }
 }

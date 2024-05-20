@@ -4,9 +4,11 @@ using Business.ValidationRules.FluentValidation;
 using Core.Aspect.Autofac.Validation;
 using Core.Utilities.Result;
 using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
 using Entities.Entity;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -65,15 +67,22 @@ namespace Business.Concrete
             return new ErrorDataResult<Kullanici>(result, Messages.KullaniciNotFound);
         }
 
-        public IResult GetByUserPasswordReset(string identityNumber, string firstName, string lastName)
+        public IResult GetByUserPasswordReset(string identityNumber, string firstName, string lastName, DateTime birthDate)
         {
-            var result = _KullaniciDal.Get(k => k.identityNumber == identityNumber && k.ad == firstName && k.soyad == lastName);
+            var result = _KullaniciDal.Get(k =>
+                k.identityNumber == identityNumber &&
+                k.ad == firstName &&
+                k.soyad == lastName &&
+                k.dogumTarih.Value == birthDate.Date // Tarih karşılaştırması
+            );
+
             if (result != null)
             {
                 return new SuccessResult();
             }
             return new ErrorResult(Messages.KullaniciNotFound);
         }
+
 
         public IResult Update(Kullanici Kullanici)
         {

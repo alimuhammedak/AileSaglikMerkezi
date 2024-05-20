@@ -12,8 +12,8 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Hastalik()
         {
-            HastaHastalik = new HashSet<HastaHastalik>();
-            HastaIlacRapor = new HashSet<HastaIlacRapor>();
+            HastaHastaliks = new HashSet<HastaHastalik>();
+            HastaIlacRapors = new HashSet<HastaIlacRapor>();
         }
 
         public int hastalikID { get; set; }
@@ -24,9 +24,9 @@ namespace Entities.Entity
         public bool? kronikMi { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaHastalik> HastaHastalik { get; set; }
+        public virtual ICollection<HastaHastalik> HastaHastaliks { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaIlacRapor> HastaIlacRapor { get; set; }
+        public virtual ICollection<HastaIlacRapor> HastaIlacRapors { get; set; }
     }
 }

@@ -39,7 +39,7 @@ namespace WinFormUI.Forms
         {
             LblKayitTarihi.Text = DateTime.Now.ToString("dd/MM/yyyy");
             var result = _hastaService.GetAllList();
-            LblProtokolNo.Text = _hastaKayitService.GetByIdentityNumber(result.Data.Select(x => x.identityNumber).First()).Data.protokolNo;
+            LblProtokolNo.Text = _hastaKayitService.GetAll().Data.First().protokolNo;
 
             DataGwHastaKayit.DataSource = result.Data;
 
@@ -86,7 +86,7 @@ namespace WinFormUI.Forms
             {
                 result = _hastaService.GetAllList().Data;
             }
-            else { result = _hastaService.GetByIdentityNumber(tc).Data; }
+            else { result = _hastaService.GetListByIdentityNumber(tc).Data; }
            
             DataGwHastaKayit.DataSource = result;
         }

@@ -12,7 +12,7 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Tedarikci()
         {
-            Ilac = new HashSet<Ilac>();
+            Ilacs = new HashSet<Ilac>();
         }
 
         public int tedarikciID { get; set; }
@@ -24,6 +24,6 @@ namespace Entities.Entity
         public string adres { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Ilac> Ilac { get; set; }
+        public virtual ICollection<Ilac> Ilacs { get; set; }
     }
 }

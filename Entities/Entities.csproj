@@ -79,10 +79,10 @@
     <Compile Include="Entity\Recete.cs" />
     <Compile Include="Entity\ReceteIlac.cs" />
     <Compile Include="Entity\ReceteTur.cs" />
+    <Compile Include="Entity\ResimYolu.cs" />
     <Compile Include="Entity\SaglikOcak.cs" />
     <Compile Include="Entity\Sikayet.cs" />
     <Compile Include="Entity\SikayetTur.cs" />
-    <Compile Include="Entity\sysdiagrams.cs" />
     <Compile Include="Entity\Tahlil.cs" />
     <Compile Include="Entity\TahlilBirim.cs" />
     <Compile Include="Entity\TahlilTur.cs" />

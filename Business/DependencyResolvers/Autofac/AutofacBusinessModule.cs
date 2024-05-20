@@ -7,6 +7,7 @@ using Autofac;
 using Business.Abstract;
 using Business.Concrete;
 using DataAccess.Abstract;
+using DataAccess.Concrete;
 using DataAccess.Concrete.EntityFramework;
 
 namespace Business.DependencyResolvers.Autofac
@@ -33,17 +34,38 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<DoktorManager>().As<IDoktorService>().SingleInstance();
             builder.RegisterType<EfDoktorDal>().As<IDoktorDal>().SingleInstance();
 
-            //// Hastalik
-            //builder.RegisterType<HastalikManager>().As<IHastalikService>().SingleInstance();
-            //builder.RegisterType<EfHastalikDal>().As<IHastalikDal>().SingleInstance();
+            // Hastalik
+            builder.RegisterType<HastalikManager>().As<IHastalikService>().SingleInstance();
+            builder.RegisterType<EfHastalikDal>().As<IHastalikDal>().SingleInstance();
+
+            // HastaKayit
+            builder.RegisterType<HastaKayitManager>().As<IHastaKayitService>().SingleInstance();
+            builder.RegisterType<EfHastaKayitDal>().As<IHastaKayitDal>().SingleInstance();
+
+            // Cinsiyet
+            builder.RegisterType<CinsiyetManager>().As<ICinsiyetService>().SingleInstance();
+            builder.RegisterType<EfCinsiyetDal>().As<ICinsiyetDal>().SingleInstance();
+
+            // Hemsire
+            builder.RegisterType<HemsireManager>().As<IHemsireService>().SingleInstance();
+            builder.RegisterType<EfHemsireDal>().As<IHemsireDal>().SingleInstance();
+
+            // Ilac
+            builder.RegisterType<IlacManager>().As<IIlacService>().SingleInstance();
+            builder.RegisterType<EfIlacDal>().As<IIlacDal>().SingleInstance();
+
+            // Tetkik
+            builder.RegisterType<TetkikManager>().As<ITetkikService>().SingleInstance();
+            builder.RegisterType<EfTetkikDal>().As<ITetkikDal>().SingleInstance();
+
+            // Tetkik
+            builder.RegisterType<ResimYolManager>().As<IResimYolService>().SingleInstance();
+            builder.RegisterType<EfResimYolDal>().As<IResimYolDal>().SingleInstance();
 
             //// HastaHastalik
             //builder.RegisterType<HastaHastalikManager>().As<IHastaHastalikService>().SingleInstance();
             //builder.RegisterType<EfHastaHastalikDal>().As<IHastaHastalikDal>().SingleInstance();
 
-            // Cinsiyet
-            builder.RegisterType<CinsiyetManager>().As<ICinsiyetService>().SingleInstance();
-            builder.RegisterType<EfCinsiyetDal>().As<ICinsiyetDal>().SingleInstance();
 
             //// HastaDetay
             //builder.RegisterType<HastaDetayManager>().As<IHastaDetayService>().SingleInstance();
@@ -57,9 +79,6 @@ namespace Business.DependencyResolvers.Autofac
             //builder.RegisterType<HastaIlacRaporManager>().As<IHastaIlacRaporService>().SingleInstance();
             //builder.RegisterType<EfHastaIlacRaporDal>().As<IHastaIlacRaporDal>().SingleInstance();
 
-            // HastaKayit
-            builder.RegisterType<HastaKayitManager>().As<IHastaKayitService>().SingleInstance();
-            builder.RegisterType<EfHastaKayitDal>().As<IHastaKayitDal>().SingleInstance();
 
             //// HastaKayitDetay
             //builder.RegisterType<HastaKayitDetayManager>().As<IHastaKayitDetayService>().SingleInstance();
@@ -77,17 +96,10 @@ namespace Business.DependencyResolvers.Autofac
             //builder.RegisterType<HastaYakinlikDereceManager>().As<IHastaYakinlikDereceService>().SingleInstance();
             //builder.RegisterType<EfHastaYakinlikDereceDal>().As<IHastaYakinlikDereceDal>().SingleInstance();
 
-            // Hemsire
-            builder.RegisterType<HemsireManager>().As<IHemsireService>().SingleInstance();
-            builder.RegisterType<EfHemsireDal>().As<IHemsireDal>().SingleInstance();
-
             //// Il
             //builder.RegisterType<IlManager>().As<IIlService>().SingleInstance();
             //builder.RegisterType<EfIlDal>().As<IIlDal>().SingleInstance();
 
-            // Ilac
-            builder.RegisterType<IlacManager>().As<IIlacService>().SingleInstance();
-            builder.RegisterType<EfIlacDal>().As<IIlacDal>().SingleInstance();
 
             //// IlacOlcek
             //builder.RegisterType<IlacOlcekManager>().As<IIlacOlcekService>().SingleInstance();
@@ -112,11 +124,6 @@ namespace Business.DependencyResolvers.Autofac
             //// Olcek
             //builder.RegisterType<OlcekManager>().As<IOlcekService>().SingleInstance();
             //builder.RegisterType<EfOlcekDal>().As<IOlcekDal>().SingleInstance();
-
-            // Personel
-            builder.RegisterType<PersonelManager>().As<IPersonelService>().SingleInstance();
-            builder.RegisterType<EfPersonelDal>().As<IPersonelDal>().SingleInstance();
-
             //// Rapor
             //builder.RegisterType<RaporManager>().As<IRaporService>().SingleInstance();
             //builder.RegisterType<EfRaporDal>().As<IRaporDal>().SingleInstance();
@@ -157,9 +164,6 @@ namespace Business.DependencyResolvers.Autofac
             //builder.RegisterType<TedarikciManager>().As<ITedarikciService>().SingleInstance();
             //builder.RegisterType<EfTedarikciDal>().As<ITedarikciDal>().SingleInstance();
 
-            //// Tetkik
-            //builder.RegisterType<TetkikManager>().As<ITetkikService>().SingleInstance();
-            //builder.RegisterType<EfTetkikDal>().As<ITetkikDal>().SingleInstance();
 
 
         }

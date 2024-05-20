@@ -12,7 +12,7 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Olcek()
         {
-            IlacOlcek = new HashSet<IlacOlcek>();
+            IlacOlceks = new HashSet<IlacOlcek>();
         }
 
         public int olcekID { get; set; }
@@ -21,6 +21,6 @@ namespace Entities.Entity
         public double? olcek1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<IlacOlcek> IlacOlcek { get; set; }
+        public virtual ICollection<IlacOlcek> IlacOlceks { get; set; }
     }
 }

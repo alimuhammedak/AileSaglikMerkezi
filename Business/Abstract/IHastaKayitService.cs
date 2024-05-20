@@ -18,11 +18,12 @@ namespace Business.Abstract
         IResult Add(HastaKayit HastaKayit);
         IResult Update(HastaKayit HastaKayit);
         IResult Delete(HastaKayit HastaKayit);
+        IDataResult<HastaKayit> GetFirstByDoktorIDToDay(int id);
+        IDataResult<List<HastaKayitDetayDto>> GetAllHastaKayitDetayByTc(string tc);
         IDataResult<List<HastaKayitDetayDto>> GetAllHastaKayitDetay();
         IDataResult<List<HastaCagirmaDto>> GetAllHastaCagirma();
-        IDataResult<HastaKayit> GetByIdentityNumber(string identityNumber);
         IDataResult<List<HastaCagirmaDto>> GetAllHastaCagirmaByDoktorID(int id);
-        IDataResult<List<HastaKayitDetayDto>> GetAllHastaKayitDetayByTc(string tc);
+        IDataResult<List<HastaCagirmaDto>> GetAllHastaCagirmaByDoktorIDToDay(int id);
         IDataResult<List<HastaCagirmaKayitDetayDtos>> GetHastaCagirmaKayitDetayByTc(string tc);
     }
 }

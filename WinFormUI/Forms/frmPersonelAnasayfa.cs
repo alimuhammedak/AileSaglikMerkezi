@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,7 +26,7 @@ namespace WinFormUI
 
         private void PctrBxHastaKayit_Click(object sender, EventArgs e)
         {
-            frmHastaKayit frmHastaKayit = new frmHastaKayit();
+            frmHastaDoktorEkle frmHastaKayit = new frmHastaDoktorEkle();
             frmHastaKayit.Show();
             this.Hide();
         }

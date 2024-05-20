@@ -7,6 +7,7 @@ using Entities.DTOs.HastaKayitDtos;
 using Entities.Entity;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,25 +75,38 @@ namespace Business.Concrete
             return new SuccessDataResult<List<HastaCagirmaDto>>(result);
         }
 
-        public IDataResult<HastaKayit> GetByIdentityNumber(string identityNumber)
-        {
-            var result = _hastaKayitDal.Get(hk => hk.Hasta.identityNumber == identityNumber);
-            if (result is null)
-            {
-                return new ErrorDataResult<HastaKayit>(result);
-            }
+        //public IDataResult<List<HastaKayit>> GetByIdentityNumberList(string identityNumber)
+        //{
+        //    var result = _hastaKayitDal.Get(hk => hk.Hasta.identityNumber == identityNumber);
+        //    if (result is null)
+        //    {
+        //        return new ErrorDataResult<HastaKayit>(result);
+        //    }
 
-            return new SuccessDataResult<HastaKayit>(result);
-        }
+        //    return new SuccessDataResult<HastaKayit>(result);
+        //}
 
         public IDataResult<List<HastaCagirmaKayitDetayDtos>> GetHastaCagirmaKayitDetayByTc(string tc)
         {
-            var result = _hastaKayitDal.GetHastaCagirmaKayitDetay(hk  => hk.HastaTc == tc);
-            if(result is null)
+            var result = _hastaKayitDal.GetHastaCagirmaKayitDetay(hk => hk.HastaTc == tc);
+            if (result is null)
             {
                 return new ErrorDataResult<List<HastaCagirmaKayitDetayDtos>>(result, Messages.HastaNotFound);
             }
             return new SuccessDataResult<List<HastaCagirmaKayitDetayDtos>>(result);
+        }
+
+        public IDataResult<List<HastaCagirmaDto>> GetAllHastaCagirmaByDoktorIDToDay(int id)
+        {
+            var result = _hastaKayitDal.GetAllHastaCagirma(hk => hk.DoktorID == id && DbFunctions.TruncateTime(hk.HastaKayitTarih) == DateTime.Today);
+            return new SuccessDataResult<List<HastaCagirmaDto>>(result);
+        }
+
+        public IDataResult<HastaKayit> GetFirstByDoktorIDToDay(int id)
+        {
+            var result = _hastaKayitDal.GetAll(hk => hk.doktorID == id &&
+            DbFunctions.TruncateTime(hk.kayitTarih) == DateTime.Today && hk.aktifMi == true).First();
+            return new SuccessDataResult<HastaKayit>(result);
         }
     }
 }

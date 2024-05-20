@@ -30,7 +30,11 @@ namespace DataAccess.Concrete.EntityFramework
                         HastaSoyad = hk.Hasta.soyad,
                         HastaTc = hk.Hasta.identityNumber,
                         HastaSira = hk.hastaSira.Value,
-                        HastaKayitID = hk.hastaKayitID
+                        HastaKayitID = hk.hastaKayitID,
+                        HastaKayitTarih = hk.kayitTarih.Value,
+                        DogumTarih = hk.Hasta.dogumTarih.Value,
+                        Cinsiyet = hk.Hasta.Cinsiyet.ad,
+                        IletisimNo = hk.Hasta.iletisimNo
                     });
 
                 if (filter != null)
@@ -73,10 +77,10 @@ namespace DataAccess.Concrete.EntityFramework
                        DoktorAdi = hk.Doktor.Kullanici.ad + " " + hk.Doktor.Kullanici.soyad,
                        DoktorID = hk.Doktor.doktorID,
                        DoktorUnvan = hk.Doktor.Unvan.ad,
-                       HastaAd = hk.Hasta.ad,
-                       HastaSoyad = hk.Hasta.soyad,
+                       HastaAd = hk.Hasta.ad + " " + hk.Hasta.soyad,
                        HastaTc = hk.Hasta.identityNumber,
-                       HastaKayitID = hk.hastaKayitID
+                       HastaKayitID = hk.hastaKayitID,
+                       KayitTarih = hk.kayitTarih.Value.ToString() 
                     });
 
                 if (filter != null)

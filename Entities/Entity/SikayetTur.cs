@@ -12,7 +12,7 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SikayetTur()
         {
-            Sikayet = new HashSet<Sikayet>();
+            Sikayets = new HashSet<Sikayet>();
         }
 
         public int sikayetTurID { get; set; }
@@ -21,6 +21,6 @@ namespace Entities.Entity
         public string ad { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Sikayet> Sikayet { get; set; }
+        public virtual ICollection<Sikayet> Sikayets { get; set; }
     }
 }

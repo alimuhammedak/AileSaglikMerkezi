@@ -12,9 +12,9 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Ilac()
         {
-            IlacOlcek = new HashSet<IlacOlcek>();
-            IlacRapor = new HashSet<IlacRapor>();
-            ReceteIlac = new HashSet<ReceteIlac>();
+            IlacOlceks = new HashSet<IlacOlcek>();
+            IlacRapors = new HashSet<IlacRapor>();
+            ReceteIlacs = new HashSet<ReceteIlac>();
         }
 
         public int ilacID { get; set; }
@@ -42,12 +42,12 @@ namespace Entities.Entity
         public virtual Tedarikci Tedarikci { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<IlacOlcek> IlacOlcek { get; set; }
+        public virtual ICollection<IlacOlcek> IlacOlceks { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<IlacRapor> IlacRapor { get; set; }
+        public virtual ICollection<IlacRapor> IlacRapors { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ReceteIlac> ReceteIlac { get; set; }
+        public virtual ICollection<ReceteIlac> ReceteIlacs { get; set; }
     }
 }

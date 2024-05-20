@@ -12,7 +12,7 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Unvan()
         {
-            Doktor = new HashSet<Doktor>();
+            Doktors = new HashSet<Doktor>();
         }
 
         public int unvanID { get; set; }
@@ -24,6 +24,6 @@ namespace Entities.Entity
         public DateTime? olusturulmaTarih { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Doktor> Doktor { get; set; }
+        public virtual ICollection<Doktor> Doktors { get; set; }
     }
 }

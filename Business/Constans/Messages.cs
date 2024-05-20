@@ -37,7 +37,7 @@ namespace Business.Constans
         public static readonly string PersonelFound = "Personel bulundu";
         public static readonly string PersonelNameIsNotEmpty = "Personel adı boş olamaz";
         public static readonly string HastaAdIsNotEmpty = "Hasta adı boş olamaz";
-        public static readonly string KullaniciUpdated = "Kullanıcı güncellendi"; 
+        public static readonly string KullaniciUpdated = "Kullanıcı güncellendi";
         public static readonly string KullaniciListed = "Kullanıcılar listelendi";
         public static readonly string KullaniciDeleted = "Kullanıcı silindi";
         public static readonly string KullaniciAdded = "Kullanıcı eklendi";
@@ -46,5 +46,21 @@ namespace Business.Constans
         public static readonly string KullaniciPasswordNotNull = "Paralo boş geçilemez";
         public static readonly string DoktorNotFound = "Doktor Bulunamadı";
         public static readonly string HastaNotFound = "Hasta bulunamadı";
+        public static readonly string HastalikNotAdded = "Hastalık eklenemedi";
+        public static readonly string HastalikAdded = "Hastalık eklendi";
+        public static readonly string HastalikNotDeleted = "Hastalık silinemedi";
+        public static readonly string HastalikNotUpdated = "Hastalık güncellenemedi";
+        public static readonly string HastalikUpdated = "Hastalık güncellendi";
+        public static readonly string HastalikFound = "Hastalık bulundu";
+        public static readonly string HastalikNotFound = "Hastalık bulunamadı";
+        public static readonly string HastalikListed = "Hastalıklar listelendi";
+        public static readonly string HastalikDeleted = "Hastalık silindi";
+        public static readonly string TetkikAdded = "Tetkik eklendi";
+        public static readonly string TetkikNotFound = "Tetkik bulunamadı";
+        public static readonly string TetkikListed = "Tetkikler listelendi";
+        public static readonly string TetkikDeleted = "Tetkik silindi";
+        public static readonly string TetkikFound = "Tetkik bulundu";
+        public static readonly string TetkikUpdated = "Tetkik güncellendi";
+        public static readonly string ResimYolNotFound = "Resim yolu bulunamadı";
     }
 }

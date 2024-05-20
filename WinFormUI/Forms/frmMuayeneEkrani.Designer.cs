@@ -1,4 +1,6 @@
-﻿namespace WinFormUI.Forms
+﻿using System.Windows.Forms;
+
+namespace WinFormUI.Forms
 {
     partial class frmMuayeneEkrani
     {
@@ -29,25 +31,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.frmMuayeneEkraniElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.frmMuayeneEkraniDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PnlHastaBilgi = new Guna.UI2.WinForms.Guna2Panel();
             this.LblTcNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblHastaDogumTarihi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblHastaCinsiyet = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.LblHastaSoyadi = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LblIletisimNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblHastaAdi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PctrBoxHasta = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PnlSikayetEkleme = new Guna.UI2.WinForms.Guna2Panel();
-            this.PctrBxPlus = new Guna.UI2.WinForms.Guna2PictureBox();
             this.TxtBxHastaSikayeti = new Guna.UI2.WinForms.Guna2TextBox();
             this.LblSikayetEkleme = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PnlRecete = new Guna.UI2.WinForms.Guna2Panel();
-            this.DataGwIlacListesi = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.TxtBxIlacListesi = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lstSelectedMedicines = new System.Windows.Forms.ListBox();
+            this.cmbIlacList = new System.Windows.Forms.ComboBox();
             this.LblRecete = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PnlUstBilgi = new Guna.UI2.WinForms.Guna2Panel();
             this.PctrBxCReturn = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -57,20 +55,19 @@
             this.LblProtokolNo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.LblProtokol = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PnlTetkikler = new Guna.UI2.WinForms.Guna2Panel();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.cbTetkikList = new System.Windows.Forms.CheckedListBox();
             this.LblTetkik = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PnlTani = new Guna.UI2.WinForms.Guna2Panel();
-            this.TxtBxHastalikDetayi = new Guna.UI2.WinForms.Guna2TextBox();
-            this.comboBoxHastalik = new System.Windows.Forms.ComboBox();
+            this.lstselectedDiagnosis = new System.Windows.Forms.ListBox();
+            this.txtHastalikDetay = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cmbHastalikList = new System.Windows.Forms.ComboBox();
             this.LblHastalik = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.LblHastaIslemleri = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PnlHastaBilgi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBoxHasta)).BeginInit();
             this.PnlSikayetEkleme.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxPlus)).BeginInit();
             this.PnlRecete.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGwIlacListesi)).BeginInit();
             this.PnlUstBilgi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxCReturn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
@@ -89,7 +86,7 @@
             this.PnlHastaBilgi.Controls.Add(this.LblTcNo);
             this.PnlHastaBilgi.Controls.Add(this.LblHastaDogumTarihi);
             this.PnlHastaBilgi.Controls.Add(this.LblHastaCinsiyet);
-            this.PnlHastaBilgi.Controls.Add(this.LblHastaSoyadi);
+            this.PnlHastaBilgi.Controls.Add(this.LblIletisimNo);
             this.PnlHastaBilgi.Controls.Add(this.LblHastaAdi);
             this.PnlHastaBilgi.Controls.Add(this.PctrBoxHasta);
             this.PnlHastaBilgi.Location = new System.Drawing.Point(0, 0);
@@ -101,7 +98,7 @@
             // 
             this.LblTcNo.BackColor = System.Drawing.Color.Transparent;
             this.LblTcNo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTcNo.Location = new System.Drawing.Point(31, 177);
+            this.LblTcNo.Location = new System.Drawing.Point(31, 223);
             this.LblTcNo.Name = "LblTcNo";
             this.LblTcNo.Size = new System.Drawing.Size(12, 17);
             this.LblTcNo.TabIndex = 57;
@@ -127,21 +124,21 @@
             this.LblHastaCinsiyet.TabIndex = 54;
             this.LblHastaCinsiyet.Text = "...";
             // 
-            // LblHastaSoyadi
+            // LblIletisimNo
             // 
-            this.LblHastaSoyadi.BackColor = System.Drawing.Color.Transparent;
-            this.LblHastaSoyadi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblHastaSoyadi.Location = new System.Drawing.Point(31, 223);
-            this.LblHastaSoyadi.Name = "LblHastaSoyadi";
-            this.LblHastaSoyadi.Size = new System.Drawing.Size(12, 17);
-            this.LblHastaSoyadi.TabIndex = 53;
-            this.LblHastaSoyadi.Text = "...";
+            this.LblIletisimNo.BackColor = System.Drawing.Color.Transparent;
+            this.LblIletisimNo.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblIletisimNo.Location = new System.Drawing.Point(31, 200);
+            this.LblIletisimNo.Name = "LblIletisimNo";
+            this.LblIletisimNo.Size = new System.Drawing.Size(12, 17);
+            this.LblIletisimNo.TabIndex = 53;
+            this.LblIletisimNo.Text = "...";
             // 
             // LblHastaAdi
             // 
             this.LblHastaAdi.BackColor = System.Drawing.Color.Transparent;
             this.LblHastaAdi.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblHastaAdi.Location = new System.Drawing.Point(31, 200);
+            this.LblHastaAdi.Location = new System.Drawing.Point(31, 177);
             this.LblHastaAdi.Name = "LblHastaAdi";
             this.LblHastaAdi.Size = new System.Drawing.Size(12, 17);
             this.LblHastaAdi.TabIndex = 52;
@@ -158,24 +155,12 @@
             // 
             // PnlSikayetEkleme
             // 
-            this.PnlSikayetEkleme.Controls.Add(this.PctrBxPlus);
             this.PnlSikayetEkleme.Controls.Add(this.TxtBxHastaSikayeti);
             this.PnlSikayetEkleme.Controls.Add(this.LblSikayetEkleme);
             this.PnlSikayetEkleme.Location = new System.Drawing.Point(241, 37);
             this.PnlSikayetEkleme.Name = "PnlSikayetEkleme";
             this.PnlSikayetEkleme.Size = new System.Drawing.Size(465, 286);
             this.PnlSikayetEkleme.TabIndex = 43;
-            // 
-            // PctrBxPlus
-            // 
-            this.PctrBxPlus.Image = global::WinFormUI.Properties.Resources.plus;
-            this.PctrBxPlus.ImageRotate = 0F;
-            this.PctrBxPlus.Location = new System.Drawing.Point(406, 232);
-            this.PctrBxPlus.Name = "PctrBxPlus";
-            this.PctrBxPlus.Size = new System.Drawing.Size(45, 45);
-            this.PctrBxPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PctrBxPlus.TabIndex = 26;
-            this.PctrBxPlus.TabStop = false;
             // 
             // TxtBxHastaSikayeti
             // 
@@ -195,7 +180,7 @@
             this.TxtBxHastaSikayeti.PasswordChar = '\0';
             this.TxtBxHastaSikayeti.PlaceholderText = "";
             this.TxtBxHastaSikayeti.SelectedText = "";
-            this.TxtBxHastaSikayeti.Size = new System.Drawing.Size(459, 161);
+            this.TxtBxHastaSikayeti.Size = new System.Drawing.Size(459, 199);
             this.TxtBxHastaSikayeti.TabIndex = 25;
             // 
             // LblSikayetEkleme
@@ -210,91 +195,42 @@
             // 
             // PnlRecete
             // 
-            this.PnlRecete.Controls.Add(this.DataGwIlacListesi);
-            this.PnlRecete.Controls.Add(this.TxtBxIlacListesi);
+            this.PnlRecete.Controls.Add(this.lstSelectedMedicines);
+            this.PnlRecete.Controls.Add(this.cmbIlacList);
             this.PnlRecete.Controls.Add(this.LblRecete);
             this.PnlRecete.Location = new System.Drawing.Point(712, 37);
             this.PnlRecete.Name = "PnlRecete";
             this.PnlRecete.Size = new System.Drawing.Size(468, 286);
             this.PnlRecete.TabIndex = 44;
             // 
-            // DataGwIlacListesi
+            // lstSelectedMedicines
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGwIlacListesi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGwIlacListesi.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.DataGwIlacListesi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGwIlacListesi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGwIlacListesi.ColumnHeadersHeight = 25;
-            this.DataGwIlacListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGwIlacListesi.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGwIlacListesi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGwIlacListesi.Location = new System.Drawing.Point(3, 65);
-            this.DataGwIlacListesi.Name = "DataGwIlacListesi";
-            this.DataGwIlacListesi.RowHeadersVisible = false;
-            this.DataGwIlacListesi.Size = new System.Drawing.Size(455, 218);
-            this.DataGwIlacListesi.TabIndex = 25;
-            this.DataGwIlacListesi.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.DataGwIlacListesi.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.DataGwIlacListesi.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.DataGwIlacListesi.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.DataGwIlacListesi.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.DataGwIlacListesi.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
-            this.DataGwIlacListesi.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGwIlacListesi.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DataGwIlacListesi.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DataGwIlacListesi.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DataGwIlacListesi.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGwIlacListesi.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DataGwIlacListesi.ThemeStyle.HeaderStyle.Height = 25;
-            this.DataGwIlacListesi.ThemeStyle.ReadOnly = false;
-            this.DataGwIlacListesi.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DataGwIlacListesi.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DataGwIlacListesi.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DataGwIlacListesi.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DataGwIlacListesi.ThemeStyle.RowsStyle.Height = 22;
-            this.DataGwIlacListesi.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGwIlacListesi.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.lstSelectedMedicines.FormattingEnabled = true;
+            this.lstSelectedMedicines.Location = new System.Drawing.Point(38, 65);
+            this.lstSelectedMedicines.Name = "lstSelectedMedicines";
+            this.lstSelectedMedicines.Size = new System.Drawing.Size(394, 199);
+            this.lstSelectedMedicines.TabIndex = 29;
             // 
-            // TxtBxIlacListesi
+            // cmbIlacList
             // 
-            this.TxtBxIlacListesi.BorderRadius = 5;
-            this.TxtBxIlacListesi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxIlacListesi.DefaultText = "İlaç Listesi Getir";
-            this.TxtBxIlacListesi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtBxIlacListesi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtBxIlacListesi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxIlacListesi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxIlacListesi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxIlacListesi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TxtBxIlacListesi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxIlacListesi.Location = new System.Drawing.Point(79, 24);
-            this.TxtBxIlacListesi.Name = "TxtBxIlacListesi";
-            this.TxtBxIlacListesi.PasswordChar = '\0';
-            this.TxtBxIlacListesi.PlaceholderText = "";
-            this.TxtBxIlacListesi.SelectedText = "";
-            this.TxtBxIlacListesi.Size = new System.Drawing.Size(353, 19);
-            this.TxtBxIlacListesi.TabIndex = 24;
+            this.cmbIlacList.AllowDrop = true;
+            this.cmbIlacList.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbIlacList.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.cmbIlacList.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbIlacList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbIlacList.FormattingEnabled = true;
+            this.cmbIlacList.Location = new System.Drawing.Point(38, 34);
+            this.cmbIlacList.Name = "cmbIlacList";
+            this.cmbIlacList.Size = new System.Drawing.Size(394, 25);
+            this.cmbIlacList.TabIndex = 28;
+            this.cmbIlacList.SelectedIndexChanged += new System.EventHandler(this.CmbIlacList_SelectedIndexChanged);
+            this.cmbIlacList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CmbIlacList_KeyDown);
             // 
             // LblRecete
             // 
             this.LblRecete.BackColor = System.Drawing.Color.Transparent;
             this.LblRecete.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.LblRecete.Location = new System.Drawing.Point(15, 24);
+            this.LblRecete.Location = new System.Drawing.Point(213, 9);
             this.LblRecete.Name = "LblRecete";
             this.LblRecete.Size = new System.Drawing.Size(43, 19);
             this.LblRecete.TabIndex = 23;
@@ -379,23 +315,23 @@
             // 
             // PnlTetkikler
             // 
-            this.PnlTetkikler.Controls.Add(this.checkedListBox1);
+            this.PnlTetkikler.Controls.Add(this.cbTetkikList);
             this.PnlTetkikler.Controls.Add(this.LblTetkik);
             this.PnlTetkikler.Location = new System.Drawing.Point(241, 329);
             this.PnlTetkikler.Name = "PnlTetkikler";
             this.PnlTetkikler.Size = new System.Drawing.Size(280, 274);
             this.PnlTetkikler.TabIndex = 46;
             // 
-            // checkedListBox1
+            // cbTetkikList
             // 
-            this.checkedListBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.checkedListBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(3, 35);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(274, 238);
-            this.checkedListBox1.TabIndex = 24;
+            this.cbTetkikList.BackColor = System.Drawing.SystemColors.Control;
+            this.cbTetkikList.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cbTetkikList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.cbTetkikList.FormattingEnabled = true;
+            this.cbTetkikList.Location = new System.Drawing.Point(3, 35);
+            this.cbTetkikList.Name = "cbTetkikList";
+            this.cbTetkikList.Size = new System.Drawing.Size(274, 238);
+            this.cbTetkikList.TabIndex = 24;
             // 
             // LblTetkik
             // 
@@ -409,56 +345,66 @@
             // 
             // PnlTani
             // 
-            this.PnlTani.Controls.Add(this.TxtBxHastalikDetayi);
-            this.PnlTani.Controls.Add(this.comboBoxHastalik);
+            this.PnlTani.Controls.Add(this.lstselectedDiagnosis);
+            this.PnlTani.Controls.Add(this.txtHastalikDetay);
+            this.PnlTani.Controls.Add(this.cmbHastalikList);
             this.PnlTani.Controls.Add(this.LblHastalik);
             this.PnlTani.Location = new System.Drawing.Point(527, 329);
             this.PnlTani.Name = "PnlTani";
             this.PnlTani.Size = new System.Drawing.Size(367, 273);
             this.PnlTani.TabIndex = 47;
             // 
-            // TxtBxHastalikDetayi
+            // lstselectedDiagnosis
             // 
-            this.TxtBxHastalikDetayi.BorderRadius = 5;
-            this.TxtBxHastalikDetayi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBxHastalikDetayi.DefaultText = "Hastalık Detayını Giriniz";
-            this.TxtBxHastalikDetayi.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TxtBxHastalikDetayi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TxtBxHastalikDetayi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxHastalikDetayi.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TxtBxHastalikDetayi.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxHastalikDetayi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TxtBxHastalikDetayi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TxtBxHastalikDetayi.Location = new System.Drawing.Point(3, 89);
-            this.TxtBxHastalikDetayi.Multiline = true;
-            this.TxtBxHastalikDetayi.Name = "TxtBxHastalikDetayi";
-            this.TxtBxHastalikDetayi.PasswordChar = '\0';
-            this.TxtBxHastalikDetayi.PlaceholderText = "";
-            this.TxtBxHastalikDetayi.SelectedText = "";
-            this.TxtBxHastalikDetayi.Size = new System.Drawing.Size(361, 181);
-            this.TxtBxHastalikDetayi.TabIndex = 28;
+            this.lstselectedDiagnosis.FormattingEnabled = true;
+            this.lstselectedDiagnosis.Location = new System.Drawing.Point(3, 76);
+            this.lstselectedDiagnosis.Name = "lstselectedDiagnosis";
+            this.lstselectedDiagnosis.Size = new System.Drawing.Size(361, 43);
+            this.lstselectedDiagnosis.TabIndex = 30;
             // 
-            // comboBoxHastalik
+            // txtHastalikDetay
             // 
-            this.comboBoxHastalik.AllowDrop = true;
-            this.comboBoxHastalik.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBoxHastalik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.comboBoxHastalik.FormattingEnabled = true;
-            this.comboBoxHastalik.Location = new System.Drawing.Point(3, 35);
-            this.comboBoxHastalik.Name = "comboBoxHastalik";
-            this.comboBoxHastalik.Size = new System.Drawing.Size(361, 25);
-            this.comboBoxHastalik.TabIndex = 27;
-            this.comboBoxHastalik.SelectedIndexChanged += new System.EventHandler(this.comboBoxHastalik_SelectedIndexChanged);
+            this.txtHastalikDetay.BorderRadius = 5;
+            this.txtHastalikDetay.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtHastalikDetay.DefaultText = "Hastalık Detayını Giriniz";
+            this.txtHastalikDetay.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtHastalikDetay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtHastalikDetay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHastalikDetay.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHastalikDetay.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHastalikDetay.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtHastalikDetay.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHastalikDetay.Location = new System.Drawing.Point(3, 131);
+            this.txtHastalikDetay.Multiline = true;
+            this.txtHastalikDetay.Name = "txtHastalikDetay";
+            this.txtHastalikDetay.PasswordChar = '\0';
+            this.txtHastalikDetay.PlaceholderText = "";
+            this.txtHastalikDetay.SelectedText = "";
+            this.txtHastalikDetay.Size = new System.Drawing.Size(361, 139);
+            this.txtHastalikDetay.TabIndex = 28;
+            // 
+            // cmbHastalikList
+            // 
+            this.cmbHastalikList.AllowDrop = true;
+            this.cmbHastalikList.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbHastalikList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbHastalikList.FormattingEnabled = true;
+            this.cmbHastalikList.Location = new System.Drawing.Point(3, 35);
+            this.cmbHastalikList.Name = "cmbHastalikList";
+            this.cmbHastalikList.Size = new System.Drawing.Size(361, 25);
+            this.cmbHastalikList.TabIndex = 27;
+            this.cmbHastalikList.SelectedIndexChanged += new System.EventHandler(this.CmbHastlikList_SelectedIndexChanged);
+            this.cmbHastalikList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CmbHastalikList_KeyDown);
             // 
             // LblHastalik
             // 
             this.LblHastalik.BackColor = System.Drawing.Color.Transparent;
             this.LblHastalik.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.LblHastalik.Location = new System.Drawing.Point(158, 3);
+            this.LblHastalik.Location = new System.Drawing.Point(169, 3);
             this.LblHastalik.Name = "LblHastalik";
-            this.LblHastalik.Size = new System.Drawing.Size(51, 19);
+            this.LblHastalik.Size = new System.Drawing.Size(28, 19);
             this.LblHastalik.TabIndex = 24;
-            this.LblHastalik.Text = "Hastalık";
+            this.LblHastalik.Text = "Tanı";
             // 
             // guna2Panel1
             // 
@@ -500,10 +446,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PctrBoxHasta)).EndInit();
             this.PnlSikayetEkleme.ResumeLayout(false);
             this.PnlSikayetEkleme.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctrBxPlus)).EndInit();
             this.PnlRecete.ResumeLayout(false);
             this.PnlRecete.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGwIlacListesi)).EndInit();
             this.PnlUstBilgi.ResumeLayout(false);
             this.PnlUstBilgi.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxCReturn)).EndInit();
@@ -526,32 +470,32 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel LblTcNo;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblHastaDogumTarihi;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblHastaCinsiyet;
-        private Guna.UI2.WinForms.Guna2HtmlLabel LblHastaSoyadi;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LblIletisimNo;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblHastaAdi;
         private Guna.UI2.WinForms.Guna2PictureBox PctrBoxHasta;
         private Guna.UI2.WinForms.Guna2Panel PnlSikayetEkleme;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblSikayetEkleme;
         private Guna.UI2.WinForms.Guna2Panel PnlRecete;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblRecete;
-        private Guna.UI2.WinForms.Guna2TextBox TxtBxIlacListesi;
         private Guna.UI2.WinForms.Guna2Panel PnlUstBilgi;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblMuayeneTarihi;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblMuayene;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblProtokolNo;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblProtokol;
         private Guna.UI2.WinForms.Guna2PictureBox PctrBxClose;
-        private Guna.UI2.WinForms.Guna2DataGridView DataGwIlacListesi;
         private Guna.UI2.WinForms.Guna2TextBox TxtBxHastaSikayeti;
-        private Guna.UI2.WinForms.Guna2PictureBox PctrBxPlus;
         private Guna.UI2.WinForms.Guna2Panel PnlTetkikler;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblTetkik;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox cbTetkikList;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblHastaIslemleri;
         private Guna.UI2.WinForms.Guna2Panel PnlTani;
         private Guna.UI2.WinForms.Guna2HtmlLabel LblHastalik;
-        private System.Windows.Forms.ComboBox comboBoxHastalik;
-        private Guna.UI2.WinForms.Guna2TextBox TxtBxHastalikDetayi;
+        private System.Windows.Forms.ComboBox cmbHastalikList;
+        private Guna.UI2.WinForms.Guna2TextBox txtHastalikDetay;
         private Guna.UI2.WinForms.Guna2PictureBox PctrBxCReturn;
+        private System.Windows.Forms.ComboBox cmbIlacList;
+        private System.Windows.Forms.ListBox lstSelectedMedicines;
+        private ListBox lstselectedDiagnosis;
     }
 }

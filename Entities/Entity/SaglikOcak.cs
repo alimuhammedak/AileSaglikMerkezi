@@ -12,8 +12,8 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SaglikOcak()
         {
-            Doktor = new HashSet<Doktor>();
-            Hemsire = new HashSet<Hemsire>();
+            Doktors = new HashSet<Doktor>();
+            Hemsires = new HashSet<Hemsire>();
         }
 
         public int saglikOcakID { get; set; }
@@ -22,9 +22,9 @@ namespace Entities.Entity
         public string ad { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Doktor> Doktor { get; set; }
+        public virtual ICollection<Doktor> Doktors { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Hemsire> Hemsire { get; set; }
+        public virtual ICollection<Hemsire> Hemsires { get; set; }
     }
 }

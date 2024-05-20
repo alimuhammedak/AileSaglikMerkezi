@@ -13,8 +13,8 @@ namespace Entities.DTOs.HastaKayitDtos
         public int DoktorID { get; set; }
         public string DoktorUnvan { get; set; }
         public string DoktorAdi { get; set; }
+        public string KayitTarih { get; set; }
         public string HastaAd { get; set; }
-        public string HastaSoyad { get; set; }
         public string HastaTc { get; set; }
     }
 }

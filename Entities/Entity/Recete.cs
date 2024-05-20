@@ -12,8 +12,8 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Recete()
         {
-            HastaKayit = new HashSet<HastaKayit>();
-            ReceteIlac = new HashSet<ReceteIlac>();
+            HastaKayits = new HashSet<HastaKayit>();
+            ReceteIlacs = new HashSet<ReceteIlac>();
         }
 
         public int receteID { get; set; }
@@ -27,9 +27,9 @@ namespace Entities.Entity
         public bool? gecerliMi { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaKayit> HastaKayit { get; set; }
+        public virtual ICollection<HastaKayit> HastaKayits { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ReceteIlac> ReceteIlac { get; set; }
+        public virtual ICollection<ReceteIlac> ReceteIlacs { get; set; }
     }
 }

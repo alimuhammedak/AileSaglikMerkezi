@@ -12,5 +12,6 @@ namespace Entities.DTOs.HastaCagirmaDtos
         public string HastaSoyad { get; set; }
         public string HastaTc { get; set; }
         public int? HastaSira { get; set; }
+        public int HastaKayitID{ get; set; }
     }
 }

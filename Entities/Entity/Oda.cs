@@ -12,7 +12,7 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Oda()
         {
-            Doktor = new HashSet<Doktor>();
+            Doktors = new HashSet<Doktor>();
         }
 
         public int odaID { get; set; }
@@ -22,6 +22,6 @@ namespace Entities.Entity
         public short? katNo { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Doktor> Doktor { get; set; }
+        public virtual ICollection<Doktor> Doktors { get; set; }
     }
 }

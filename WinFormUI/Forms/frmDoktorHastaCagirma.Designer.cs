@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.frmDoktorHastaCagirmaElipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.frmDoktorHastaCagirmaDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.PnlHastaCagirma = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -43,7 +43,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PnlHastaSiraListesi = new Guna.UI2.WinForms.Guna2Panel();
             this.BtnHastaCagir = new Guna.UI2.WinForms.Guna2TileButton();
-            this.LblSifreSifirlama = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.LblHead = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgvHastaListe = new Guna.UI2.WinForms.Guna2DataGridView();
             this.PnlHastaCagirma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -142,7 +142,7 @@
             // PnlHastaSiraListesi
             // 
             this.PnlHastaSiraListesi.Controls.Add(this.BtnHastaCagir);
-            this.PnlHastaSiraListesi.Controls.Add(this.LblSifreSifirlama);
+            this.PnlHastaSiraListesi.Controls.Add(this.LblHead);
             this.PnlHastaSiraListesi.Controls.Add(this.dgvHastaListe);
             this.PnlHastaSiraListesi.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlHastaSiraListesi.Location = new System.Drawing.Point(0, 0);
@@ -170,41 +170,40 @@
             this.BtnHastaCagir.Text = "Hasta Çağır";
             this.BtnHastaCagir.Click += new System.EventHandler(this.BtnHastaCagir_Click);
             // 
-            // LblSifreSifirlama
+            // LblHead
             // 
-            this.LblSifreSifirlama.BackColor = System.Drawing.Color.Transparent;
-            this.LblSifreSifirlama.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.LblSifreSifirlama.Location = new System.Drawing.Point(294, 12);
-            this.LblSifreSifirlama.Name = "LblSifreSifirlama";
-            this.LblSifreSifirlama.Size = new System.Drawing.Size(124, 23);
-            this.LblSifreSifirlama.TabIndex = 22;
-            this.LblSifreSifirlama.Text = "Hasta Sıra Listesi";
-            this.LblSifreSifirlama.Click += new System.EventHandler(this.LblSifreSifirlama_Click);
+            this.LblHead.BackColor = System.Drawing.Color.Transparent;
+            this.LblHead.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.LblHead.Location = new System.Drawing.Point(294, 12);
+            this.LblHead.Name = "LblHead";
+            this.LblHead.Size = new System.Drawing.Size(124, 23);
+            this.LblHead.TabIndex = 22;
+            this.LblHead.Text = "Hasta Sıra Listesi";
             // 
             // dgvHastaListe
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvHastaListe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvHastaListe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvHastaListe.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvHastaListe.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvHastaListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvHastaListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvHastaListe.ColumnHeadersHeight = 25;
             this.dgvHastaListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvHastaListe.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvHastaListe.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvHastaListe.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvHastaListe.Location = new System.Drawing.Point(12, 57);
             this.dgvHastaListe.Name = "dgvHastaListe";
@@ -267,7 +266,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel PnlHastaSiraListesi;
         private Guna.UI2.WinForms.Guna2DataGridView dgvHastaListe;
-        private Guna.UI2.WinForms.Guna2HtmlLabel LblSifreSifirlama;
+        private Guna.UI2.WinForms.Guna2HtmlLabel LblHead;
         private Guna.UI2.WinForms.Guna2PictureBox PctrBxClose;
         private Guna.UI2.WinForms.Guna2PictureBox PctrBxCReturn;
         private Guna.UI2.WinForms.Guna2TileButton BtnHastaCagir;

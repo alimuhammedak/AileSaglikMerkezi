@@ -17,6 +17,7 @@ namespace Business.Abstract
         IResult Update(Hasta hasta);
         IResult Delete(Hasta hasta);
         IDataResult<List<HastaListeDto>> GetAllList();
-        IDataResult<List<HastaListeDto>> GetByIdentityNumber(string identityNumber);
+        IDataResult<List<HastaListeDto>> GetListByIdentityNumber(string identityNumber);
+        IDataResult<Hasta> GetByIdentityNumber(string identityNumber);
     }
 }

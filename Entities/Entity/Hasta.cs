@@ -12,10 +12,11 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Hasta()
         {
-            HastaDetay = new HashSet<HastaDetay>();
-            HastaHastalik = new HashSet<HastaHastalik>();
-            HastaIlacRapor = new HashSet<HastaIlacRapor>();
-            HastaKayit = new HashSet<HastaKayit>();
+            HastaDetays = new HashSet<HastaDetay>();
+            HastaHastaliks = new HashSet<HastaHastalik>();
+            HastaIlacRapors = new HashSet<HastaIlacRapor>();
+            HastaKayits = new HashSet<HastaKayit>();
+            ResimYolus = new HashSet<ResimYolu>();
         }
 
         public int hastaID { get; set; }
@@ -52,15 +53,18 @@ namespace Entities.Entity
         public virtual Cinsiyet Cinsiyet { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaDetay> HastaDetay { get; set; }
+        public virtual ICollection<HastaDetay> HastaDetays { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaHastalik> HastaHastalik { get; set; }
+        public virtual ICollection<HastaHastalik> HastaHastaliks { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaIlacRapor> HastaIlacRapor { get; set; }
+        public virtual ICollection<HastaIlacRapor> HastaIlacRapors { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaKayit> HastaKayit { get; set; }
+        public virtual ICollection<HastaKayit> HastaKayits { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ResimYolu> ResimYolus { get; set; }
     }
 }

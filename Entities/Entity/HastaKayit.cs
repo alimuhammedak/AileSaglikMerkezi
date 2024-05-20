@@ -12,8 +12,8 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public HastaKayit()
         {
-            HastaKayitDetay = new HashSet<HastaKayitDetay>();
-            Tahlil = new HashSet<Tahlil>();
+            HastaKayitDetays = new HashSet<HastaKayitDetay>();
+            Tahlils = new HashSet<Tahlil>();
         }
 
         public int hastaKayitID { get; set; }
@@ -56,9 +56,9 @@ namespace Entities.Entity
         public virtual Recete Recete { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaKayitDetay> HastaKayitDetay { get; set; }
+        public virtual ICollection<HastaKayitDetay> HastaKayitDetays { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tahlil> Tahlil { get; set; }
+        public virtual ICollection<Tahlil> Tahlils { get; set; }
     }
 }

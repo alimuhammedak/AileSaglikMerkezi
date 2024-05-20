@@ -1,16 +1,17 @@
-using Entities.Entity;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 
-namespace DataAccess.Concrete.EntityFramework
+namespace Entities.Entity
 {
     public partial class SODBContext : DbContext
     {
         public SODBContext()
             : base("name=SODBContext")
         {
+            this.Database.Log = message => Debug.WriteLine(message);
         }
 
         public virtual DbSet<Cinsiyet> Cinsiyet { get; set; }
@@ -34,10 +35,10 @@ namespace DataAccess.Concrete.EntityFramework
         public virtual DbSet<Recete> Recete { get; set; }
         public virtual DbSet<ReceteIlac> ReceteIlac { get; set; }
         public virtual DbSet<ReceteTur> ReceteTur { get; set; }
+        public virtual DbSet<ResimYolu> ResimYolu { get; set; }
         public virtual DbSet<SaglikOcak> SaglikOcak { get; set; }
         public virtual DbSet<Sikayet> Sikayet { get; set; }
         public virtual DbSet<SikayetTur> SikayetTur { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Tahlil> Tahlil { get; set; }
         public virtual DbSet<TahlilBirim> TahlilBirim { get; set; }
         public virtual DbSet<TahlilTur> TahlilTur { get; set; }
@@ -86,7 +87,7 @@ namespace DataAccess.Concrete.EntityFramework
                 .IsUnicode(false);
 
             modelBuilder.Entity<ReceteTur>()
-                .HasMany(e => e.Ilac)
+                .HasMany(e => e.Ilacs)
                 .WithOptional(e => e.ReceteTur)
                 .HasForeignKey(e => e.receteTurID);
 
@@ -108,12 +109,12 @@ namespace DataAccess.Concrete.EntityFramework
                 .HasPrecision(3, 2);
 
             modelBuilder.Entity<TahlilBirim>()
-                .HasMany(e => e.Tahlil)
+                .HasMany(e => e.Tahlils)
                 .WithOptional(e => e.TahlilBirim)
                 .HasForeignKey(e => e.birimID);
 
             modelBuilder.Entity<TahlilTur>()
-                .HasMany(e => e.Tahlil)
+                .HasMany(e => e.Tahlils)
                 .WithOptional(e => e.TahlilTur)
                 .HasForeignKey(e => e.tetkikID);
         }

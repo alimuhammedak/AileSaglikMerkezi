@@ -10,6 +10,7 @@ namespace WinFormUI
 {
     public static class Program
     {
+        public static HastaKayit HastaKayit { get; set; }
         public static Kullanici Kullanici { get; set; }
         public static Doktor Doktor { get; set; }
         public static Personel Personel { get; set; }

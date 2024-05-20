@@ -12,7 +12,7 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ReceteTur()
         {
-            Ilac = new HashSet<Ilac>();
+            Ilacs = new HashSet<Ilac>();
         }
 
         [Key]
@@ -23,6 +23,6 @@ namespace Entities.Entity
         public string receteTuru { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Ilac> Ilac { get; set; }
+        public virtual ICollection<Ilac> Ilacs { get; set; }
     }
 }

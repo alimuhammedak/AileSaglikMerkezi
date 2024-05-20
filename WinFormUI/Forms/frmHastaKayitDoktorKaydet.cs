@@ -16,10 +16,10 @@ using System.Windows.Forms;
 
 namespace WinFormUI.Forms
 {
-    public partial class frmHastaKayit : Form
+    public partial class frmHastaDoktorEkle : Form
     {
         private readonly IHastaKayitService _hastaKayitService;
-        public frmHastaKayit()
+        public frmHastaDoktorEkle()
         {
             InitializeComponent();
             _hastaKayitService = InstanceFactory.GetInstance<IHastaKayitService>();

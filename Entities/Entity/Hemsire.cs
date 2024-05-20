@@ -12,7 +12,7 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Hemsire()
         {
-            HastaKayit = new HashSet<HastaKayit>();
+            HastaKayits = new HashSet<HastaKayit>();
         }
 
         public int hemsireID { get; set; }
@@ -27,7 +27,7 @@ namespace Entities.Entity
         public int? saglikOcakID { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HastaKayit> HastaKayit { get; set; }
+        public virtual ICollection<HastaKayit> HastaKayits { get; set; }
 
         public virtual Kullanici Kullanici { get; set; }
 

@@ -12,7 +12,7 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Cinsiyet()
         {
-            Hasta = new HashSet<Hasta>();
+            Hastas = new HashSet<Hasta>();
         }
 
         public int cinsiyetID { get; set; }
@@ -21,6 +21,6 @@ namespace Entities.Entity
         public string ad { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Hasta> Hasta { get; set; }
+        public virtual ICollection<Hasta> Hastas { get; set; }
     }
 }

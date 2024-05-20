@@ -34,7 +34,7 @@ namespace WinFormUI.Forms
         {
             if (txtSifre.Text != txtSifreTekrar.Text)
             {
-                MessageBox.Show("Şifreler Uyuşmuyor. Lütfen Kontrol Ediniz!","Dikkat",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Şifreler Uyuşmuyor. Lütfen Kontrol Ediniz!", "Dikkat", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -42,15 +42,13 @@ namespace WinFormUI.Forms
                 var result = _kullaniciService.Update(_kullanici);
                 if (result.IsSuccess)
                 {
-                    MessageBox.Show(result.Message,"Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(result.Message, "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     var frm = new frmGiris();
                     frm.Show();
                     this.Close();
                 }
-                else
-                {
-                    MessageBox.Show(result.Message);
-                }
+
+                MessageBox.Show(result.Message);
             }
         }
 

@@ -12,7 +12,7 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Yetki()
         {
-            Kullanici = new HashSet<Kullanici>();
+            Kullanicis = new HashSet<Kullanici>();
         }
 
         public int yetkiID { get; set; }
@@ -21,6 +21,6 @@ namespace Entities.Entity
         public string ad { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Kullanici> Kullanici { get; set; }
+        public virtual ICollection<Kullanici> Kullanicis { get; set; }
     }
 }

@@ -17,6 +17,6 @@ namespace Business.Abstract
         IDataResult<Kullanici> GetByIdentityNumber(string identityNumber);
         IDataResult<List<Kullanici>> GetAll();
         IDataResult<Kullanici> GetByUserNameAndPassword(string userName, string password);
-        IResult GetByUserPasswordReset(string identityNumber, string firstName, string lastName);
+        IResult GetByUserPasswordReset(string identityNumber, string firstName, string lastName ,DateTime birthDate);
     }
 }

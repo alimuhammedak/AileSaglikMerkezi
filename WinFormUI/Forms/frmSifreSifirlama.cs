@@ -31,7 +31,16 @@ namespace WinFormUI.Forms
 
         private void BtnSifreSifirlama_Click(object sender, EventArgs e)
         {
-            var result = _kullaniciService.GetByUserPasswordReset(TxtBxTcNo.Text, TxtBxAdi.Text, TxtBxSoyadi.Text);
+            // Tarih bilgisini al
+            DateTime selectedBirthDate = dtSfDogumTarih.Value.Date;
+
+            // Tarihi string olarak formatla
+            string onlyDate = selectedBirthDate.ToString("yyyy-MM-dd");
+
+            // İhtiyaç halinde string tarihi tekrar DateTime'a dönüştür
+            DateTime dateOnly = DateTime.Parse(onlyDate);
+
+            var result = _kullaniciService.GetByUserPasswordReset(TxtBxTcNo.Text, TxtBxAdi.Text, TxtBxSoyadi.Text, dateOnly);
             if (result.IsSuccess)
             {
                 var kullanici = _kullaniciService.GetByIdentityNumber(TxtBxTcNo.Text);
@@ -50,11 +59,6 @@ namespace WinFormUI.Forms
             var frm = new frmGiris();
             frm.Show();
             this.Close();
-        }
-
-        private void dtSfDogumTarih_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

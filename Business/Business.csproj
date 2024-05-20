@@ -97,6 +97,7 @@
   <ItemGroup>
     <Compile Include="Abstract\ICinsiyetService.cs" />
     <Compile Include="Abstract\IKullaniciService.cs" />
+    <Compile Include="Abstract\IResimYolService.cs" />
     <Compile Include="Abstract\ITetkikService.cs" />
     <Compile Include="Abstract\ISikayetService.cs" />
     <Compile Include="Abstract\ITahlilTurService.cs" />
@@ -125,11 +126,14 @@
     <Compile Include="Concrete\CinsiyetManager.cs" />
     <Compile Include="Concrete\DoktorManager.cs" />
     <Compile Include="Concrete\HastaKayitManager.cs" />
+    <Compile Include="Concrete\HastalikManager.cs" />
     <Compile Include="Concrete\HastaManager.cs" />
     <Compile Include="Concrete\HemsireManager.cs" />
     <Compile Include="Concrete\IlacManager.cs" />
     <Compile Include="Concrete\KullaniciManager.cs" />
     <Compile Include="Concrete\PersonelManager.cs" />
+    <Compile Include="Concrete\ResimYolManager.cs" />
+    <Compile Include="Concrete\TetkikManager.cs" />
     <Compile Include="Constans\Messages.cs" />
     <Compile Include="DependencyResolvers\Autofac\AutofacBusinessModule.cs" />
     <Compile Include="DependencyResolvers\Autofac\InstanceFactory.cs" />

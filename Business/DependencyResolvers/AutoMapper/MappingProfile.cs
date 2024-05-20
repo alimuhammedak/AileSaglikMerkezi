@@ -20,10 +20,10 @@ namespace Business.DependencyResolvers.AutoMapper
             CreateMap<HastaCagirmaDto, Hasta>();
             CreateMap<HastaListeDto, Hasta>()
                 .ForMember(dest => dest.Cinsiyet, act => act.Ignore())
-                .ForMember(dest => dest.HastaDetay, act => act.Ignore())
-                .ForMember(dest => dest.HastaHastalik, act => act.Ignore())
-                .ForMember(dest => dest.HastaIlacRapor, act => act.Ignore())
-                .ForMember(dest => dest.HastaKayit, act => act.Ignore());
+                .ForMember(dest => dest.HastaDetays, act => act.Ignore())
+                .ForMember(dest => dest.HastaHastaliks, act => act.Ignore())
+                .ForMember(dest => dest.HastaIlacRapors, act => act.Ignore())
+                .ForMember(dest => dest.HastaKayits, act => act.Ignore());
 
             CreateMap<Hasta, HastaListeDto>();
 

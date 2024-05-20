@@ -14,11 +14,9 @@ namespace Business.Concrete
     public class IlacManager : IIlacService
     {
         private IIlacDal _ilacDal;
-        private IKullaniciService _kullaniciService;
-        public IlacManager(IIlacDal ilacDal, IKullaniciService kullaniciService)
+        public IlacManager(IIlacDal ilacDal)
         {
             _ilacDal = ilacDal;
-            _kullaniciService = kullaniciService;
         }
 
         public IResult Add(Ilac ilac)

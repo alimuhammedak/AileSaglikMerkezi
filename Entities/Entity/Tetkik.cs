@@ -12,7 +12,7 @@ namespace Entities.Entity
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Tetkik()
         {
-            Tahlil = new HashSet<Tahlil>();
+            Tahlils = new HashSet<Tahlil>();
         }
 
         public int tetkikID { get; set; }
@@ -21,6 +21,6 @@ namespace Entities.Entity
         public string ad { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tahlil> Tahlil { get; set; }
+        public virtual ICollection<Tahlil> Tahlils { get; set; }
     }
 }

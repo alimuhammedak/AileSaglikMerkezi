@@ -5,6 +5,7 @@ using Core.Mapper;
 using Core.Utilities.Result;
 using Entities.DTOs;
 using Entities.DTOs.HastaCagirmaDtos;
+using Entities.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,7 +46,7 @@ namespace WinFormUI.Forms
         private void frmDoktorHastaCagirma_Load(object sender, EventArgs e)
         {
             //var doktor = _doktorService.GetByKullaniciId(Program.Kullanici.kullaniciID).Data;
-            var result = _hastaKayitService.GetAllHastaCagirmaByDoktorID(Program.Doktor.doktorID);
+            var result = _hastaKayitService.GetAllHastaCagirmaByDoktorIDToDay(Program.Doktor.doktorID);
 
             #region Mapper Config
             var mapperConfiguration = new AutoMapperConfiguration();
@@ -55,19 +56,10 @@ namespace WinFormUI.Forms
 
             hastaListesi = new BindingList<HastaCagirmaHastaDto>(resultHasta);
             dgvHastaListe.DataSource = hastaListesi;
+            dgvHastaListe.Columns["HastaKayitID"].Visible = false;
             //lblDoktor.Text = result.Data.Select(h => h.DoktorUnvan + " DR. " + h.DoktorAdi).FirstOrDefault();
             LblHastaAdi.Text = result.Data.Select(h => h.HastaAd + " " + h.HastaSoyad).FirstOrDefault();
             LblHastaTc.Text = result.Data.Select(h => h.HastaTc).FirstOrDefault();
-        }
-
-        private void guna2TileButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblSifreSifirlama_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void BtnHastaCagir_Click(object sender, EventArgs e)
@@ -79,14 +71,16 @@ namespace WinFormUI.Forms
 
                 if (hastaCagirma != null)
                 {
-                    // Hasta kaydını güncelle
-                    var hastaKayit = _hastaKayitService.GetByIdentityNumber(hastaCagirma.HastaTc).Data;
+                    //Hasta kaydını güncelle
+
+                    var hastaKayit = _hastaKayitService.GetById(hastaCagirma.HastaKayitID).Data;
                     hastaKayit.aktifMi = false;
                     _hastaKayitService.Update(hastaKayit);
 
                     // BindingList'ten ilk satırı kaldır
                     hastaListesi.RemoveAt(0);
 
+                    Program.HastaKayit = hastaKayit;
                     // Eğer hala satır varsa, ilk satırdaki bilgileri alıp label'ları güncelleyin
                     if (hastaListesi.Count > 0)
                     {
@@ -106,11 +100,5 @@ namespace WinFormUI.Forms
                 }
             }
         }
-
-
-        //private void DataUpload()
-        //{
-
-        //}
     }
 }
