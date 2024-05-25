@@ -77,11 +77,11 @@
     <Compile Include="Forms\frmDoktorAnasayfa.Designer.cs">
       <DependentUpon>frmDoktorAnasayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmDoktorHastaListe.cs">
+    <Compile Include="Forms\frmHastaListe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmDoktorHastaListe.Designer.cs">
-      <DependentUpon>frmDoktorHastaListe.cs</DependentUpon>
+    <Compile Include="Forms\frmHastaListe.Designer.cs">
+      <DependentUpon>frmHastaListe.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmMuayeneEkrani.cs">
       <SubType>Form</SubType>
@@ -107,11 +107,11 @@
     <Compile Include="Forms\frmHastaCagirma.Designer.cs">
       <DependentUpon>frmHastaCagirma.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmHastaKayitDoktorKaydet.cs">
+    <Compile Include="Forms\frmHastaDoktorEkle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmHastaKayitDoktorKaydet.Designer.cs">
-      <DependentUpon>frmHastaKayitDoktorKaydet.cs</DependentUpon>
+      <DependentUpon>frmHastaDoktorEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmRapor.cs">
       <SubType>Form</SubType>
@@ -139,14 +139,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmHastaDoktorEkle.resx">
+      <DependentUpon>frmHastaDoktorEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPersonelAnasayfa.resx">
       <DependentUpon>frmPersonelAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmDoktorAnasayfa.resx">
       <DependentUpon>frmDoktorAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmDoktorHastaListe.resx">
-      <DependentUpon>frmDoktorHastaListe.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmHastaListe.resx">
+      <DependentUpon>frmHastaListe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMuayeneEkrani.resx">
       <DependentUpon>frmMuayeneEkrani.cs</DependentUpon>
@@ -159,9 +162,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmHastaCagirma.resx">
       <DependentUpon>frmHastaCagirma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmHastaKayitDoktorKaydet.resx">
-      <DependentUpon>frmHastaKayitDoktorKaydet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmRapor.resx">
       <DependentUpon>frmRapor.cs</DependentUpon>

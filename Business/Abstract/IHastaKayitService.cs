@@ -25,5 +25,7 @@ namespace Business.Abstract
         IDataResult<List<HastaCagirmaDto>> GetAllHastaCagirmaByDoktorID(int id);
         IDataResult<List<HastaCagirmaDto>> GetAllHastaCagirmaByDoktorIDToDay(int id);
         IDataResult<List<HastaCagirmaKayitDetayDtos>> GetHastaCagirmaKayitDetayByTc(string tc);
+        string GenerateProtokolNo();
+
     }
 }

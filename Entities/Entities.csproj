@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\DoktorDto.cs" />
     <Compile Include="DTOs\HastaKayitDtos\HastaCagirmaKayitDetayDtos.cs" />
     <Compile Include="DTOs\HastaListeDtos\HastaListeDto.cs" />
     <Compile Include="DTOs\HastaCagirmaDtos\HastaCagirmaDto.cs" />

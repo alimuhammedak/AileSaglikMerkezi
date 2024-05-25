@@ -25,13 +25,13 @@ using System.Windows.Forms;
 
 namespace WinFormUI.Forms
 {
-    public partial class frmDoktorHastaListe : Form
+    public partial class frmHastaListe : Form
     {
         private readonly IHastaKayitService _hastaKayitService;
         private readonly IHastaService _hastaService;
         private readonly IResimYolService _resimYolService;
 
-        public frmDoktorHastaListe()
+        public frmHastaListe()
         {
             InitializeComponent();
             _hastaKayitService = InstanceFactory.GetInstance<IHastaKayitService>();
@@ -78,9 +78,18 @@ namespace WinFormUI.Forms
         }
         private void PctrBxCReturn_Click(object sender, EventArgs e)
         {
-            frmDoktorAnasayfa frmAnaSayfa = new frmDoktorAnasayfa();
-            frmAnaSayfa.Show();
-            this.Hide();
+            if (Program.Doktor != null)
+            {
+                var frmAnaSayfa = new frmDoktorAnasayfa();
+                frmAnaSayfa.Show();
+                this.Hide();
+            }
+            else if (Program.Kullanici != null)
+            {
+                var frmAnaSayfa = new frmPersonelAnasayfa();
+                frmAnaSayfa.Show();
+                this.Hide();
+            }
         }
         private void TxtBxTcNo_TextChanged(object sender, EventArgs e)
         {
@@ -98,6 +107,8 @@ namespace WinFormUI.Forms
         {
             var result = _hastaKayitService.GetHastaCagirmaKayitDetayByTc(tc);
             dgvHastaKayit.DataSource = result.Data;
+            dgvHastaKayit.Columns["HastaKayitID"].Visible = false;
+            dgvHastaKayit.Columns["DoktorID"].Visible = false;
         }
         private void HastaGoster(HastaListeDto hasta)
         {

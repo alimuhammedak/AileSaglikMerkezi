@@ -1,6 +1,6 @@
 ﻿namespace WinFormUI.Forms
 {
-    partial class frmDoktorHastaListe
+    partial class frmHastaListe
     {
         /// <summary>
         /// Required designer variable.

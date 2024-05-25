@@ -175,7 +175,7 @@
             // 
             this.txtSifre.BorderRadius = 5;
             this.txtSifre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSifre.DefaultText = "ZXCV5J4K3L2H5";
+            this.txtSifre.DefaultText = "salt6";
             this.txtSifre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtSifre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSifre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -186,7 +186,7 @@
             this.txtSifre.Location = new System.Drawing.Point(139, 287);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '●';
-            this.txtSifre.PlaceholderText = "sifre123";
+            this.txtSifre.PlaceholderText = "Şifre";
             this.txtSifre.SelectedText = "";
             this.txtSifre.Size = new System.Drawing.Size(439, 30);
             this.txtSifre.TabIndex = 1;
@@ -196,7 +196,7 @@
             // 
             this.txtKullanici.BorderRadius = 5;
             this.txtKullanici.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtKullanici.DefaultText = "selin_koc";
+            this.txtKullanici.DefaultText = "ebeyaz";
             this.txtKullanici.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtKullanici.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtKullanici.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -207,7 +207,7 @@
             this.txtKullanici.Location = new System.Drawing.Point(139, 213);
             this.txtKullanici.Name = "txtKullanici";
             this.txtKullanici.PasswordChar = '\0';
-            this.txtKullanici.PlaceholderText = "aliak123";
+            this.txtKullanici.PlaceholderText = "Kullanıcı Ad";
             this.txtKullanici.SelectedText = "";
             this.txtKullanici.Size = new System.Drawing.Size(439, 30);
             this.txtKullanici.TabIndex = 0;

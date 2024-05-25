@@ -25,7 +25,8 @@ namespace Business.Concrete
 
         public IResult Add(HastaKayit HastaKayit)
         {
-            throw new NotImplementedException();
+            _hastaKayitDal.Add(HastaKayit);
+            return new SuccessResult();
         }
 
         public IResult Delete(HastaKayit HastaKayit)
@@ -107,6 +108,24 @@ namespace Business.Concrete
             var result = _hastaKayitDal.GetAll(hk => hk.doktorID == id &&
             DbFunctions.TruncateTime(hk.kayitTarih) == DateTime.Today && hk.aktifMi == true).First();
             return new SuccessDataResult<HastaKayit>(result);
+        }
+
+        public string GenerateProtokolNo()
+        {
+
+            // Tarih bilgisini kullanarak benzersiz bir numara oluşturmak için
+            string tarihDaması = DateTime.Now.ToString("yyyyMMddHHmmss");
+
+            // Rastgele 4 haneli bir sayı oluşturmak için
+            Random random = new Random();
+            int rastgeleSayi = random.Next(1000, 9999);
+
+            // Tarih damgası ve rastgele sayıyı birleştirerek protokol numarasını oluştur
+            string protokolNo = tarihDaması + rastgeleSayi.ToString();
+
+            return protokolNo;
+
+
         }
     }
 }

@@ -2,6 +2,7 @@
 using Business.Constans;
 using Core.Utilities.Result;
 using DataAccess.Abstract;
+using Entities.DTOs;
 using Entities.Entity;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,22 @@ namespace Business.Concrete
 
         public IDataResult<List<Doktor>> GetAll()
         {
-            throw new NotImplementedException();
+            var result = _doktorDal.GetAll();
+            if (result == null)
+            {
+                return new ErrorDataResult<List<Doktor>>(Messages.DoktorNotFound);
+            }
+            return new SuccessDataResult<List<Doktor>>(result);
+        }
+
+        public IDataResult<List<DoktorDto>> GetAllKayit()
+        {
+            var result = _doktorDal.GetAllDoktorListe();
+            if (result == null)
+            {
+                return new ErrorDataResult<List<DoktorDto>>(Messages.DoktorNotFound);
+            }
+            return new SuccessDataResult<List<DoktorDto>>(result);
         }
 
         public IDataResult<Doktor> GetById(int id)

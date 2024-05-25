@@ -1,4 +1,5 @@
 ﻿using Core.Utilities.Result;
+using Entities.DTOs;
 using Entities.Entity;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace Business.Abstract
         IDataResult<List<Doktor>> GetAll();
         IDataResult<Doktor> GetById(int id);
         IDataResult<Doktor> GetByKullaniciId(int id);
+        IDataResult<List<DoktorDto>> GetAllKayit();
         IResult Add(Doktor doktor);
         IResult Update(Doktor doktor);
         IResult Delete(Doktor doktor);

@@ -63,7 +63,7 @@ namespace WinFormUI
 
         private void PctrBxHastaListe_Click(object sender, EventArgs e)
         {
-            var frm = new frmDoktorHastaListe();
+            var frm = new frmHastaListe();
             frm.Show();
             this.Close();
         }

@@ -100,7 +100,7 @@
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(680, 420);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(680, 417);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(120, 27);
             this.guna2HtmlLabel4.TabIndex = 47;
@@ -137,7 +137,7 @@
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(680, 338);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(680, 336);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(109, 27);
             this.guna2HtmlLabel2.TabIndex = 45;
@@ -186,7 +186,7 @@
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(680, 255);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(680, 254);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(137, 27);
             this.guna2HtmlLabel3.TabIndex = 38;
@@ -196,7 +196,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(680, 165);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(680, 179);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(129, 27);
             this.guna2HtmlLabel1.TabIndex = 36;
@@ -209,7 +209,7 @@
             this.guna2PictureBox3.ImageRotate = 0F;
             this.guna2PictureBox3.Location = new System.Drawing.Point(760, 464);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(122, 83);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(118, 93);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox3.TabIndex = 35;
             this.guna2PictureBox3.TabStop = false;
@@ -246,7 +246,7 @@
             this.PctrBxMuayeneEkrani.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.PctrBxMuayeneEkrani.Image = global::WinFormUI.Properties.Resources.hastaCagir;
             this.PctrBxMuayeneEkrani.ImageRotate = 0F;
-            this.PctrBxMuayeneEkrani.Location = new System.Drawing.Point(477, 152);
+            this.PctrBxMuayeneEkrani.Location = new System.Drawing.Point(477, 165);
             this.PctrBxMuayeneEkrani.Name = "PctrBxMuayeneEkrani";
             this.PctrBxMuayeneEkrani.Size = new System.Drawing.Size(177, 50);
             this.PctrBxMuayeneEkrani.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

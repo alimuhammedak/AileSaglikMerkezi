@@ -117,7 +117,237 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;TxtBxTelefon.Name" xml:space="preserve">
+    <value>TxtBxTelefon</value>
+  </data>
+  <data name="&gt;&gt;TxtBxTelefon.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TxtBxTelefon.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;TxtBxTelefon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel2.Name" xml:space="preserve">
+    <value>guna2HtmlLabel2</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel2.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel3.Name" xml:space="preserve">
+    <value>guna2HtmlLabel3</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel3.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel3.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;guna2HtmlLabel3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TxtBxSGKno.Name" xml:space="preserve">
+    <value>TxtBxSGKno</value>
+  </data>
+  <data name="&gt;&gt;TxtBxSGKno.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TxtBxSGKno.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;TxtBxSGKno.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;LblTekrar.Name" xml:space="preserve">
+    <value>LblTekrar</value>
+  </data>
+  <data name="&gt;&gt;LblTekrar.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LblTekrar.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;LblTekrar.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TxtBxDogumTarih.Name" xml:space="preserve">
+    <value>TxtBxDogumTarih</value>
+  </data>
+  <data name="&gt;&gt;TxtBxDogumTarih.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TxtBxDogumTarih.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;TxtBxDogumTarih.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;LblSifreSifirlama.Name" xml:space="preserve">
+    <value>LblSifreSifirlama</value>
+  </data>
+  <data name="&gt;&gt;LblSifreSifirlama.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LblSifreSifirlama.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;LblSifreSifirlama.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdres.Name" xml:space="preserve">
+    <value>TxtBxAdres</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdres.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdres.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdres.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;LbSoyadi.Name" xml:space="preserve">
+    <value>LbSoyadi</value>
+  </data>
+  <data name="&gt;&gt;LbSoyadi.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LbSoyadi.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;LbSoyadi.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LblTcNo.Name" xml:space="preserve">
+    <value>LblTcNo</value>
+  </data>
+  <data name="&gt;&gt;LblTcNo.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LblTcNo.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;LblTcNo.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;TxtBxEmail.Name" xml:space="preserve">
+    <value>TxtBxEmail</value>
+  </data>
+  <data name="&gt;&gt;TxtBxEmail.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TxtBxEmail.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;TxtBxEmail.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btnHatirladim.Name" xml:space="preserve">
+    <value>btnHatirladim</value>
+  </data>
+  <data name="&gt;&gt;btnHatirladim.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TileButton, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;btnHatirladim.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;btnHatirladim.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;BtnHastaKayit.Name" xml:space="preserve">
+    <value>BtnHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;BtnHastaKayit.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TileButton, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;BtnHastaKayit.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;BtnHastaKayit.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;TxtBxDogumYeri.Name" xml:space="preserve">
+    <value>TxtBxDogumYeri</value>
+  </data>
+  <data name="&gt;&gt;TxtBxDogumYeri.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TxtBxDogumYeri.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;TxtBxDogumYeri.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdSoyad.Name" xml:space="preserve">
+    <value>TxtBxAdSoyad</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdSoyad.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdSoyad.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;TxtBxAdSoyad.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;LblDogumYeri.Name" xml:space="preserve">
+    <value>LblDogumYeri</value>
+  </data>
+  <data name="&gt;&gt;LblDogumYeri.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LblDogumYeri.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;LblDogumYeri.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;LblAdi.Name" xml:space="preserve">
+    <value>LblAdi</value>
+  </data>
+  <data name="&gt;&gt;LblAdi.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LblAdi.Parent" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;LblAdi.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PnlYeniHastaKayit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PnlYeniHastaKayit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PnlYeniHastaKayit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>709, 560</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PnlYeniHastaKayit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PnlYeniHastaKayit.Name" xml:space="preserve">
+    <value>PnlYeniHastaKayit</value>
+  </data>
+  <data name="&gt;&gt;PnlYeniHastaKayit.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;PnlYeniHastaKayit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlYeniHastaKayit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="TxtBxTelefon.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
@@ -127,7 +357,6 @@
   <data name="TxtBxTelefon.Size" type="System.Drawing.Size, System.Drawing">
     <value>439, 30</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TxtBxTelefon.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -557,37 +786,36 @@
   <data name="&gt;&gt;LblAdi.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PnlYeniHastaKayit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="PnlYeniHastaKayit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PnlYeniHastaKayit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>709, 560</value>
-  </data>
-  <data name="PnlYeniHastaKayit.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;PnlYeniHastaKayit.Name" xml:space="preserve">
-    <value>PnlYeniHastaKayit</value>
-  </data>
-  <data name="&gt;&gt;PnlYeniHastaKayit.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;PnlYeniHastaKayit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PnlYeniHastaKayit.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="personelKayitElipse.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="personelKayitDragControl.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>172, 17</value>
   </metadata>
+  <data name="PctrBxCReturn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 3</value>
+  </data>
+  <data name="PctrBxCReturn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="PctrBxCReturn.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PctrBxCReturn.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;PctrBxCReturn.Name" xml:space="preserve">
+    <value>PctrBxCReturn</value>
+  </data>
+  <data name="&gt;&gt;PctrBxCReturn.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;PctrBxCReturn.Parent" xml:space="preserve">
+    <value>PnlLogo</value>
+  </data>
+  <data name="&gt;&gt;PctrBxCReturn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="PctrBxClose.Location" type="System.Drawing.Point, System.Drawing">
     <value>440, 3</value>
   </data>
@@ -610,7 +838,7 @@
     <value>PnlLogo</value>
   </data>
   <data name="&gt;&gt;PctrBxClose.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="PctrBxAciklamaResim.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -637,7 +865,7 @@
     <value>PnlLogo</value>
   </data>
   <data name="&gt;&gt;PctrBxAciklamaResim.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="PnlLogo.Location" type="System.Drawing.Point, System.Drawing">
     <value>715, 0</value>

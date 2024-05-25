@@ -16,5 +16,24 @@ namespace WinFormUI.Forms
         {
             InitializeComponent();
         }
+
+        private void PctrBxClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnHatirladim_Click(object sender, EventArgs e)
+        {
+            var frm = new frmPersonelAnasayfa();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void PctrBxCReturn_Click(object sender, EventArgs e)
+        {
+            var frm = new frmPersonelAnasayfa();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

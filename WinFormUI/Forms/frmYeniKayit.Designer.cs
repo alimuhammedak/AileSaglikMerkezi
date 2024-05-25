@@ -53,10 +53,12 @@
             this.PnlLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.PctrBxClose = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PctrBxAciklamaResim = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PctrBxCReturn = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PnlYeniHastaKayit.SuspendLayout();
             this.PnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxAciklamaResim)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxCReturn)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlYeniHastaKayit
@@ -216,6 +218,7 @@
             resources.ApplyResources(this.btnHatirladim, "btnHatirladim");
             this.btnHatirladim.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnHatirladim.Name = "btnHatirladim";
+            this.btnHatirladim.Click += new System.EventHandler(this.btnHatirladim_Click);
             // 
             // BtnHastaKayit
             // 
@@ -285,6 +288,7 @@
             // 
             // PnlLogo
             // 
+            this.PnlLogo.Controls.Add(this.PctrBxCReturn);
             this.PnlLogo.Controls.Add(this.PctrBxClose);
             this.PnlLogo.Controls.Add(this.PctrBxAciklamaResim);
             resources.ApplyResources(this.PnlLogo, "PnlLogo");
@@ -297,6 +301,7 @@
             resources.ApplyResources(this.PctrBxClose, "PctrBxClose");
             this.PctrBxClose.Name = "PctrBxClose";
             this.PctrBxClose.TabStop = false;
+            this.PctrBxClose.Click += new System.EventHandler(this.PctrBxClose_Click);
             // 
             // PctrBxAciklamaResim
             // 
@@ -305,6 +310,15 @@
             resources.ApplyResources(this.PctrBxAciklamaResim, "PctrBxAciklamaResim");
             this.PctrBxAciklamaResim.Name = "PctrBxAciklamaResim";
             this.PctrBxAciklamaResim.TabStop = false;
+            // 
+            // PctrBxCReturn
+            // 
+            this.PctrBxCReturn.Image = global::WinFormUI.Properties.Resources._return;
+            this.PctrBxCReturn.ImageRotate = 0F;
+            resources.ApplyResources(this.PctrBxCReturn, "PctrBxCReturn");
+            this.PctrBxCReturn.Name = "PctrBxCReturn";
+            this.PctrBxCReturn.TabStop = false;
+            this.PctrBxCReturn.Click += new System.EventHandler(this.PctrBxCReturn_Click);
             // 
             // frmYeniKayit
             // 
@@ -319,6 +333,7 @@
             this.PnlLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PctrBxAciklamaResim)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PctrBxCReturn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,5 +363,6 @@
         private Guna.UI2.WinForms.Guna2Panel PnlLogo;
         private Guna.UI2.WinForms.Guna2PictureBox PctrBxAciklamaResim;
         private Guna.UI2.WinForms.Guna2PictureBox PctrBxClose;
+        private Guna.UI2.WinForms.Guna2PictureBox PctrBxCReturn;
     }
 }

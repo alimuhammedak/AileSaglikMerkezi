@@ -26,6 +26,7 @@ namespace Business.DependencyResolvers.AutoMapper
                 .ForMember(dest => dest.HastaKayits, act => act.Ignore());
 
             CreateMap<Hasta, HastaListeDto>();
+            CreateMap<Doktor, DoktorDto>();
 
             //CreateMap<CarDetailEditDTO, Car>();
             //CreateMap<CarDetailEditDTO, Car>();

@@ -28,36 +28,36 @@ namespace WinFormUI
         {
             frmHastaDoktorEkle frmHastaKayit = new frmHastaDoktorEkle();
             frmHastaKayit.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void PctrBxHastaCagirma_Click(object sender, EventArgs e)
         {
-            frmMuayeneEkrani frmMuayeneEkrani = new frmMuayeneEkrani();
-            frmMuayeneEkrani.Show();
-            this.Hide();
+            var frm = new frmYeniKayit();
+            frm.Show();
+            this.Close();
 
-        }
-
-        private void PctrBxMuayeneEkrani_Click(object sender, EventArgs e)
-        {
-            frmDoktorHastaCagirma frmDoktorHastaCagirma = new frmDoktorHastaCagirma();
-            frmDoktorHastaCagirma.Show();
-            this.Hide();
-
-            
         }
 
         private void PctrBxRapor_Click(object sender, EventArgs e)
         {
             frmRapor frmRapor = new frmRapor();
             frmRapor.Show();
-            this.Hide();
+            this.Close();
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        private void PctrBxHastaKayit_Click_1(object sender, EventArgs e)
         {
+            var frm = new frmHastaDoktorEkle();
+            frm.Show();
+            this.Close();
+        }
 
+        private void PctrBxKayitListesi_Click(object sender, EventArgs e)
+        {
+            var frm = new frmHastaListe();
+            frm.Show();
+            this.Close();
         }
     }
 }
